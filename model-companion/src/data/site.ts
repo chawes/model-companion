@@ -4,4 +4,5 @@ export const SITE = {
   clubName: 'Drawing Club Prague',
   clubUrl: 'https://www.drawingclubprague.com/',
   modelingUrl: 'https://www.drawingclubprague.com/models',
+  email: 'drawingclubprague@gmail.com',
 } as const;

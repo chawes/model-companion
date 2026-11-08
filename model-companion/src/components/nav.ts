@@ -1,4 +1,4 @@
-import { BookOpen, Bookmark, LayoutGrid, type LucideIcon } from 'lucide-react';
+import { BookOpen, Bookmark, Images, LayoutGrid, type LucideIcon } from 'lucide-react';
 import type { StringKey } from '../i18n/strings';
 
 export interface NavItem {
@@ -10,6 +10,7 @@ export interface NavItem {
 
 export const NAV_ITEMS: NavItem[] = [
   { to: '/', label: 'navPoses', icon: LayoutGrid },
+  { to: '/inspiration', label: 'navInspiration', icon: Images },
   { to: '/saved', label: 'navSaved', icon: Bookmark },
   { to: '/guide', label: 'navGuide', icon: BookOpen },
 ];

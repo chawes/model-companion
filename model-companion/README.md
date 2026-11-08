@@ -152,3 +152,29 @@ Design tokens (colours, fonts) are in `src/styles/index.css` under `@theme`.
   stores ID lists; a shareable collection can be encoded as `?ids=a,b,c` in a URL.
 - **Multilingual:** all copy is in `src/data/*` — split per language (`en`, `cs`).
 - **Session timer:** a new page + route in `App.tsx`; pose durations are already typed.
+
+## 8. Inspiration board and /admin
+
+The **Inspiration** section is a caption-free image board edited at `/admin`
+(upload, reorder, optional source/author, delete). Changes are committed to this
+repository by the Vercel Function `api/inspiration.js`; Vercel redeploys in about a minute.
+
+Data: `public/inspiration/index.json` + images in `public/inspiration/`.
+Uploaded images are resized in the browser to max 1600 px (JPEG).
+
+One-time setup:
+
+1. **GitHub token** — github.com → avatar → Settings → Developer settings →
+   Personal access tokens → **Fine-grained tokens** → Generate new token.
+   Repository access: *Only select repositories* → `model-companion`.
+   Permissions → Repository permissions → **Contents: Read and write**. Copy the token.
+2. **Vercel** — Project → Settings → **Environment Variables**, add:
+   - `GITHUB_TOKEN` = the token
+   - `ADMIN_PASSWORD` = a password you choose for /admin
+3. Vercel → Deployments → latest → **Redeploy** (env variables apply to new deployments).
+
+Optional variables: `GITHUB_REPO` (default `chawes/model-companion`), `GITHUB_BRANCH` (`main`),
+`GITHUB_ROOT` (`model-companion` — the app's folder inside the repo).
+
+The token expires according to the date you choose; when it does, /admin shows a GitHub 401 error —
+generate a new one and replace `GITHUB_TOKEN`.

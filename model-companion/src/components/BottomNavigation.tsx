@@ -14,7 +14,7 @@ export function BottomNavigation() {
       aria-label="Main"
       className="fixed inset-x-0 bottom-0 z-40 border-t hairline bg-paper/92 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
     >
-      <ul className="mx-auto grid max-w-sm grid-cols-3">
+      <ul className="mx-auto grid max-w-md grid-cols-4">
         {NAV_ITEMS.map(({ to, label, icon: Icon }) => {
           const active = isNavActive(to, pathname);
           return (
