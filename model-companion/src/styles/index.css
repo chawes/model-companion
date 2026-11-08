@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Model Companion — design tokens
+   Warm paper, charcoal ink, one restrained accent (sanguine chalk).
+------------------------------------------------------------------- */
+@theme {
+  --color-paper: #f4f0e8;
+  --color-paper-deep: #ebe5d9;
+  --color-paper-bright: #faf8f3;
+  --color-ink: #1c1b19;
+  --color-ink-soft: #5f5b54;
+  --color-ink-faint: #8f8a80;
+  --color-line: #dcd5c7;
+  --color-sanguine: #a84b2a;
+  --color-sanguine-soft: #f0ddd1;
+
+  --font-display: 'Instrument Serif', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-enter: enter 0.5s var(--ease-out-soft) both;
+  --animate-fade: fade 0.35s ease-out both;
+
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background: var(--color-sanguine-soft);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sanguine);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  img {
+    -webkit-user-drag: none;
+  }
+}
+
+@layer components {
+  /* Small uppercase label — the "museum caption" voice of the app */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+  }
+
+  .hairline {
+    border-color: var(--color-line);
+  }
+
+  /* Subtle paper grain, pure CSS */
+  .paper-grain {
+    background-image: radial-gradient(rgb(28 27 25 / 0.035) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

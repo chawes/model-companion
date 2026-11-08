@@ -1,0 +1,402 @@
+[
+  {
+    "id": "contrapposto-rest",
+    "title": "Contrapposto Rest",
+    "image": "/poses/contrapposto-rest.svg",
+    "imageAlt": "Standing mannequin figure with weight on one leg, opposite hip and shoulder tilted, one hand resting on the hip.",
+    "category": "standing",
+    "duration": "10",
+    "difficulty": 1,
+    "tip": "Put your weight on one leg and let the other relax — hips and shoulders tilt in opposite directions.",
+    "advice": [
+      "Lock the knee of the standing leg softly, not hard — a fully locked knee gets tiring.",
+      "Rest a hand on the hip of the relaxed side to keep the arm stable.",
+      "Choose a fixed point on the wall for your gaze so your head returns to the same angle."
+    ],
+    "tags": [
+      "classic",
+      "weight shift",
+      "beginner-friendly"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "overhead-stretch",
+    "title": "Overhead Stretch",
+    "image": "/poses/overhead-stretch.svg",
+    "imageAlt": "Standing figure stretching both arms straight above the head.",
+    "category": "standing",
+    "duration": "3-5",
+    "difficulty": 2,
+    "tip": "A long vertical line from heels to fingertips. Keep it short — raised arms tire quickly.",
+    "advice": [
+      "Interlace your fingers or hold one wrist to share the load between both arms.",
+      "Keep your shoulders away from your ears; let the shoulder blades drop.",
+      "Lower the arms slightly if your hands start tingling — a small change is fine."
+    ],
+    "tags": [
+      "vertical",
+      "stretch",
+      "short hold"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "over-the-shoulder",
+    "title": "Glance Over the Shoulder",
+    "image": "/poses/over-the-shoulder.svg",
+    "imageAlt": "Figure turned three-quarters away, head looking back over the shoulder, one hand on the hip.",
+    "category": "standing",
+    "duration": "10",
+    "difficulty": 1,
+    "tip": "Turn the body away and bring the head back toward the room. The twist creates instant interest.",
+    "advice": [
+      "Turn mostly from the hips and ribcage; keep the neck rotation gentle.",
+      "Place the hand of the turned side on the hip to anchor the shoulders.",
+      "Pick a gaze point you can comfortably hold for the full pose."
+    ],
+    "tags": [
+      "twist",
+      "three-quarter",
+      "back view"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "stool-thinker",
+    "title": "Forward Lean on a Stool",
+    "image": "/poses/stool-thinker.svg",
+    "imageAlt": "Figure seated on a stool, leaning forward with forearms resting on the thighs.",
+    "category": "seated",
+    "duration": "15-20",
+    "difficulty": 1,
+    "tip": "Lean forward and let your forearms rest on your thighs — the stool and legs carry the weight.",
+    "advice": [
+      "Spread your feet a little wider than your hips for a stable base.",
+      "Rest your forearms rather than your elbows to avoid pressure points.",
+      "Let your head hang naturally; holding it high gets tiring over 20 minutes."
+    ],
+    "tags": [
+      "stool",
+      "long pose",
+      "supported"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "floor-lean-back",
+    "title": "Floor Sit, Leaning Back",
+    "image": "/poses/floor-lean-back.svg",
+    "imageAlt": "Figure sitting on the floor, leaning back on both hands, one knee raised.",
+    "category": "floor",
+    "duration": "10",
+    "difficulty": 1,
+    "tip": "Sit on the floor, lean back on your hands and bend one knee — an open, relaxed triangle shape.",
+    "advice": [
+      "Place your hands slightly turned outward to protect the wrists.",
+      "Bend one knee up to create varied shapes for the artists.",
+      "Ask for a cushion or mat so the floor stays comfortable."
+    ],
+    "tags": [
+      "floor",
+      "open shape",
+      "mat"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "reclining-propped",
+    "title": "Side Recline, Head Propped",
+    "image": "/poses/reclining-propped.svg",
+    "imageAlt": "Figure lying on its side, upper body raised, head propped on one hand, top knee bent.",
+    "category": "floor",
+    "duration": "15-20",
+    "difficulty": 1,
+    "tip": "Lie on your side with your head resting on one hand. One of the most sustainable long poses.",
+    "advice": [
+      "Use a cushion under the hip and under the propping elbow.",
+      "Bend the top knee forward to keep the pelvis from rolling.",
+      "If the propping arm gets heavy, rest your head on the forearm instead — mention it to the organizer."
+    ],
+    "tags": [
+      "reclining",
+      "long pose",
+      "cushion"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "forward-lunge-reach",
+    "title": "Lunge and Reach",
+    "image": "/poses/forward-lunge-reach.svg",
+    "imageAlt": "Figure in a forward lunge with one arm reaching far ahead and the other extended back.",
+    "category": "dynamic",
+    "duration": "1-2",
+    "difficulty": 3,
+    "tip": "A strong diagonal from back foot to reaching hand. Commit fully — it only lasts a minute or two.",
+    "advice": [
+      "Make the stance wide enough that you don't wobble.",
+      "Reach with intention: extend through the fingertips.",
+      "Keep it to quick gesture rounds — this is not a pose to hold."
+    ],
+    "tags": [
+      "action",
+      "diagonal",
+      "warm-up"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "spiral-twist",
+    "title": "Spiral Twist",
+    "image": "/poses/spiral-twist.svg",
+    "imageAlt": "Standing figure twisting through the torso, one arm raised high, the other low.",
+    "category": "dynamic",
+    "duration": "1-2",
+    "difficulty": 2,
+    "tip": "Feet face one way, shoulders another. The spiral through the torso gives artists rhythm to chase.",
+    "advice": [
+      "Plant both feet before you rotate the upper body.",
+      "Raise one arm to exaggerate the spiral; keep the other low.",
+      "Breathe out into the twist — don't hold your breath."
+    ],
+    "tags": [
+      "twist",
+      "rhythm",
+      "gesture"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "throwing-gesture",
+    "title": "Throw",
+    "image": "/poses/throwing-gesture.svg",
+    "imageAlt": "Figure caught mid-throw, one arm drawn back, the other extended forward.",
+    "category": "gestural",
+    "duration": "1-2",
+    "difficulty": 2,
+    "tip": "Freeze the moment just before a throw — arm drawn back, weight loaded on the back leg.",
+    "advice": [
+      "Think of a real action; imagined movement reads as more convincing.",
+      "Lean the torso clearly away from the throwing direction.",
+      "Keep the stance stable enough to hold still for the whole minute."
+    ],
+    "tags": [
+      "action",
+      "storytelling",
+      "warm-up"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "hands-on-thighs",
+    "title": "Bent Forward, Hands on Thighs",
+    "image": "/poses/hands-on-thighs.svg",
+    "imageAlt": "Figure bent forward at the hips with both hands resting on the thighs.",
+    "category": "gestural",
+    "duration": "3-5",
+    "difficulty": 2,
+    "tip": "Hinge from the hips and rest your hands on your thighs — a clear, readable bend.",
+    "advice": [
+      "Keep a soft bend in the knees to protect the lower back.",
+      "Let your hands take some of the upper body weight.",
+      "Look down or ahead — choose what's easier on the neck."
+    ],
+    "tags": [
+      "bend",
+      "silhouette",
+      "short hold"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "staff-lean",
+    "title": "Leaning on a Staff",
+    "image": "/poses/staff-lean.svg",
+    "imageAlt": "Standing figure leaning lightly on a tall staff held with one hand.",
+    "category": "relaxed",
+    "duration": "15-20",
+    "difficulty": 1,
+    "tip": "A staff or pole adds a second support point and lets you hold an elegant line for longer.",
+    "advice": [
+      "Place the staff a little in front of you so you can lean into it.",
+      "Hold it at shoulder height or below; higher gets tiring.",
+      "Ask the organizer whether a staff, pole or broom handle is available."
+    ],
+    "tags": [
+      "prop",
+      "long pose",
+      "supported"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "folded-arms",
+    "title": "Folded Arms, Weight Shifted",
+    "image": "/poses/folded-arms.svg",
+    "imageAlt": "Standing figure with arms folded across the chest and weight shifted to one leg.",
+    "category": "relaxed",
+    "duration": "15-20",
+    "difficulty": 1,
+    "tip": "A calm, natural standing pose. Folded arms keep the shoulders relaxed and the hands still.",
+    "advice": [
+      "Shift the weight to one leg, then back to centre if you need a micro-rest.",
+      "Fold the arms loosely — tight arms cut off circulation.",
+      "Breathe slowly; this pose rewards stillness."
+    ],
+    "tags": [
+      "natural",
+      "long pose",
+      "standing"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "kneeling-arch",
+    "title": "Kneeling Arch",
+    "image": "/poses/kneeling-arch.svg",
+    "imageAlt": "Kneeling figure arching back, chest open, hands behind the head.",
+    "category": "dramatic",
+    "duration": "3-5",
+    "difficulty": 3,
+    "tip": "Kneel, open the chest and tip the head back with hands behind it. Expressive — and demanding.",
+    "advice": [
+      "Always kneel on a cushion or folded mat.",
+      "Arch from the upper back, not by crunching the lower back.",
+      "Come out slowly at the end; give yourself a moment before standing."
+    ],
+    "tags": [
+      "expressive",
+      "kneeling",
+      "cushion"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "heroic-reach",
+    "title": "Heroic Reach",
+    "image": "/poses/heroic-reach.svg",
+    "imageAlt": "Figure with one foot raised on a stool, reaching up along a tall staff.",
+    "category": "dramatic",
+    "duration": "3-5",
+    "difficulty": 2,
+    "tip": "One foot raised on a stool, one arm reaching up along a staff — a monumental, sculptural pose.",
+    "advice": [
+      "Check the stool is stable before stepping onto it.",
+      "Keep the raised hand gripping the staff so the arm can rest on it.",
+      "Keep the standing knee soft."
+    ],
+    "tags": [
+      "prop",
+      "stool",
+      "monumental"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "stool-twist",
+    "title": "Twisted on a Stool",
+    "image": "/poses/stool-twist.svg",
+    "imageAlt": "Figure seated on a stool with the torso turned, one leg extended, one tucked back.",
+    "category": "seated",
+    "duration": "10",
+    "difficulty": 2,
+    "tip": "Sit on a stool, turn your shoulders away from your knees and tuck one leg back.",
+    "advice": [
+      "Let the stool take your weight; the twist should feel easy, not forced.",
+      "Rest one hand on the stool behind you for support.",
+      "Turn the head with the shoulders to avoid neck strain."
+    ],
+    "tags": [
+      "stool",
+      "twist",
+      "asymmetry"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  },
+  {
+    "id": "kneeling-rest",
+    "title": "Kneeling Rest",
+    "image": "/poses/kneeling-rest.svg",
+    "imageAlt": "Figure kneeling on one knee with the other foot planted and a forearm resting on the raised knee.",
+    "category": "relaxed",
+    "duration": "10",
+    "difficulty": 1,
+    "tip": "One knee down, one foot planted, forearm resting on the raised knee. Grounded and calm.",
+    "advice": [
+      "Put a cushion under the kneeling knee.",
+      "Let the forearm rest on the raised knee rather than holding it up.",
+      "Swap sides on the next pose to give the knee a break."
+    ],
+    "tags": [
+      "kneeling",
+      "grounded",
+      "cushion"
+    ],
+    "credit": {
+      "author": "Model Companion — original diagram",
+      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "placeholder": true
+    }
+  }
+]
