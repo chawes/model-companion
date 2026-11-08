@@ -32,7 +32,7 @@ for (const [id, def] of Object.entries(POSE_DEFS)) {
 
 for (const [id, { def, opts }] of Object.entries(GUIDE_DEFS)) {
   const d = typeof def === 'string' ? POSE_DEFS[def] : def;
-  const svg = render(d, { label: id.replace(/-/g, ' '), ...opts });
+  const svg = render(d, { label: id.replace(/-/g, ' '), ...opts, caption: false });
   writeFileSync(join(guideDir, `${id}.svg`), svg);
 }
 

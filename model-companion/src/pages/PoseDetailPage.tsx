@@ -1,31 +1,22 @@
-import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { PoseDetail } from '../components/PoseDetail';
 import { getPose, POSES } from '../data/poses';
-import { useDocumentTitle } from '../hooks/useDocumentTitle';
-import { usePoseFilters } from '../hooks/usePoseFilters';
+import { useDocumentTitle, useLang } from '../i18n/LangContext';
 import { NotFoundPage } from './NotFoundPage';
+import { usePoseFilter } from './PosesPage';
 
 export function PoseDetailPage() {
   const { id } = useParams();
+  const { l } = useLang();
   const pose = getPose(id);
-  const { results, query } = usePoseFilters();
-  useDocumentTitle(pose?.title);
-
-  // Navigate within the filtered set when the pose belongs to it, otherwise the whole library.
-  const list = useMemo(() => (pose && results.includes(pose) ? results : POSES), [pose, results]);
+  const { results, query } = usePoseFilter();
+  useDocumentTitle(pose ? l(pose.title) : undefined);
 
   if (!pose) return <NotFoundPage />;
 
-  const index = list.indexOf(pose);
-  const inFilter = list === results;
-  return (
-    <PoseDetail
-      pose={pose}
-      prev={index > 0 ? list[index - 1] : undefined}
-      next={index < list.length - 1 ? list[index + 1] : undefined}
-      query={inFilter ? query : ''}
-      position={{ index, total: list.length }}
-    />
-  );
+  // Step through the filtered set when the pose belongs to it, otherwise the whole library.
+  const inFilter = results.includes(pose);
+  const list = inFilter ? results : POSES;
+  const i = list.indexOf(pose);
+  return <PoseDetail pose={pose} prev={list[i - 1]} next={list[i + 1]} query={inFilter ? query : ''} />;
 }

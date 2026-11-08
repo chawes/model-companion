@@ -1,21 +1,18 @@
-import type { Pose, PoseCategory, PoseDuration } from '../types';
+import type { Pose, PoseCategory } from '../types';
 import raw from './poses.json';
 
-/**
- * The pose library. Edit poses.json to add or change poses —
- * see README → "Adding poses".
- */
+/** The pose library. Edit poses.json to add or change poses — see README. */
 export const POSES: Pose[] = raw as Pose[];
 
 export const getPose = (id: string | undefined) => POSES.find((p) => p.id === id);
 
-/** 1-based plate number, used for the editorial "No. 01" labels. */
-export const plateNumber = (pose: Pose) => String(POSES.indexOf(pose) + 1).padStart(2, '0');
+export const CATEGORIES: { id: PoseCategory; key: 'catStanding' | 'catSeated' | 'catFloor' | 'catAction' }[] = [
+  { id: 'standing', key: 'catStanding' },
+  { id: 'seated', key: 'catSeated' },
+  { id: 'floor', key: 'catFloor' },
+  { id: 'action', key: 'catAction' },
+];
 
-export interface PoseFilter {
-  category: PoseCategory | null;
-  duration: PoseDuration | null;
-}
+export const isCategory = (v: string | null): v is PoseCategory => CATEGORIES.some((c) => c.id === v);
 
-export const filterPoses = (poses: Pose[], f: PoseFilter) =>
-  poses.filter((p) => (!f.category || p.category === f.category) && (!f.duration || p.duration === f.duration));
+export const durationText = (d: Pose['duration']) => d.replace('-', '–');

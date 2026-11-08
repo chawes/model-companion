@@ -1,0 +1,111 @@
+/** All interface texts. Content (poses, guide) lives in src/data. */
+const cs = {
+  navPoses: 'Pózy',
+  navSaved: 'Uložené',
+  navGuide: 'Průvodce',
+  skip: 'Přeskočit na obsah',
+  tagline: 'Průvodce pro modely',
+
+  posesEyebrow: 'Drawing Club Prague · pro modely',
+  posesTitle: 'Pózy pro inspiraci',
+  posesIntro: 'Nápady na pózy pro kresbu podle živého modelu. Jsou to jen návrhy — uprav si je podle sebe, nebo je vynech.',
+  filterAll: 'Vše',
+  catStanding: 'Stoj',
+  catSeated: 'Sed',
+  catFloor: 'Na zemi',
+  catAction: 'Akce',
+  posesCount: 'póz',
+  minutes: 'min',
+
+  back: 'Pózy',
+  suggested: 'Doporučená délka',
+  save: 'Uložit',
+  saved: 'Uloženo',
+  saveAria: 'Uložit pózu',
+  unsaveAria: 'Odebrat z uložených',
+  previous: 'Předchozí',
+  next: 'Další',
+  suggestionNote: 'Návrh, ne pokyn — přizpůsob si pózu svému tělu.',
+  placeholderCredit: 'Dočasná ilustrace — bude nahrazena.',
+  aiCredit: 'Ilustrace vytvořená pomocí AI.',
+
+  savedTitle: 'Uložené pózy',
+  savedIntro: 'Uložené pózy zůstávají jen v tomto zařízení. Účet nepotřebuješ.',
+  savedEmptyTitle: 'Zatím nic uloženého',
+  savedEmptyText: 'U pózy, kterou chceš zkusit, klepni na záložku. Najdeš ji pak tady.',
+  savedBrowse: 'Prohlédnout pózy',
+  savedClear: 'Smazat vše',
+  savedClearConfirm: 'Klepni znovu pro smazání',
+
+  guideTitle: 'Průvodce',
+  guideIntro: 'Pár jednoduchých principů a praktických informací. Žádná pravidla — vezmi si, co ti pomůže.',
+  guidePoseSection: 'Co dělá pózu dobrou',
+  guidePrepSection: 'Před sezením',
+  guideTakeaway: 'Shrnutí',
+  officialEyebrow: 'Oficiální informace',
+  officialTitle: 'Modeling v Drawing Club Prague',
+  officialText: 'Kontakt, aktuální podmínky a podrobnosti najdeš na drawingclubprague.com.',
+
+  footer: 'Pózy jsou jen návrhy. Oblečení, nahota a výběr póz jsou vždy na tobě.',
+  notFoundTitle: 'Tahle stránka si dala pauzu.',
+  notFoundText: 'Stránka neexistuje nebo se přesunula.',
+  notFoundBack: 'Zpět na pózy',
+};
+
+type Strings = typeof cs;
+export type StringKey = keyof Strings;
+
+const en: Strings = {
+  navPoses: 'Poses',
+  navSaved: 'Saved',
+  navGuide: 'Guide',
+  skip: 'Skip to content',
+  tagline: 'A companion for life models',
+
+  posesEyebrow: 'Drawing Club Prague · for models',
+  posesTitle: 'Poses for inspiration',
+  posesIntro: 'Pose ideas for life drawing sessions. They are only suggestions — adapt them to your body, or skip them.',
+  filterAll: 'All',
+  catStanding: 'Standing',
+  catSeated: 'Seated',
+  catFloor: 'Floor',
+  catAction: 'Action',
+  posesCount: 'poses',
+  minutes: 'min',
+
+  back: 'Poses',
+  suggested: 'Suggested length',
+  save: 'Save',
+  saved: 'Saved',
+  saveAria: 'Save pose',
+  unsaveAria: 'Remove from saved',
+  previous: 'Previous',
+  next: 'Next',
+  suggestionNote: 'A suggestion, not an instruction — adapt it to your body.',
+  placeholderCredit: 'Temporary illustration — to be replaced.',
+  aiCredit: 'Illustration created with AI.',
+
+  savedTitle: 'Saved poses',
+  savedIntro: 'Saved poses stay on this device only. No account needed.',
+  savedEmptyTitle: 'Nothing saved yet',
+  savedEmptyText: 'Tap the bookmark on any pose you would like to try. It will wait for you here.',
+  savedBrowse: 'Browse poses',
+  savedClear: 'Clear all',
+  savedClearConfirm: 'Tap again to clear',
+
+  guideTitle: 'Guide',
+  guideIntro: 'A few simple principles and practical notes. No rules — take what helps.',
+  guidePoseSection: 'What makes a pose work',
+  guidePrepSection: 'Before the session',
+  guideTakeaway: 'Takeaway',
+  officialEyebrow: 'Official information',
+  officialTitle: 'Modeling at Drawing Club Prague',
+  officialText: 'Contact, current terms and details are on drawingclubprague.com.',
+
+  footer: 'Poses are only suggestions. Clothing, nudity and pose choices are always up to you.',
+  notFoundTitle: 'This page took a break.',
+  notFoundText: 'The page does not exist or has moved.',
+  notFoundBack: 'Back to poses',
+};
+
+export const STRINGS = { cs, en };

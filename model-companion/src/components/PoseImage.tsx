@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLang } from '../i18n/LangContext';
 import type { Pose } from '../types';
 
 interface Props {
@@ -9,12 +10,13 @@ interface Props {
 
 /** Reference image on a paper-toned frame with a soft fade-in once loaded. */
 export function PoseImage({ pose, priority = false, className = '' }: Props) {
+  const { l } = useLang();
   const [loaded, setLoaded] = useState(false);
   return (
     <div className={`relative overflow-hidden bg-paper-deep ${className}`}>
       <img
         src={pose.image}
-        alt={pose.imageAlt}
+        alt={l(pose.imageAlt)}
         width={800}
         height={1000}
         loading={priority ? 'eager' : 'lazy'}

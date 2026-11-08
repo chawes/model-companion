@@ -1,401 +1,369 @@
 [
   {
     "id": "contrapposto-rest",
-    "title": "Contrapposto Rest",
+    "title": {
+      "cs": "Kontrapost",
+      "en": "Contrapposto Rest"
+    },
     "image": "/poses/contrapposto-rest.svg",
-    "imageAlt": "Standing mannequin figure with weight on one leg, opposite hip and shoulder tilted, one hand resting on the hip.",
+    "imageAlt": {
+      "cs": "Stojící figura s váhou na jedné noze a rukou opřenou o bok.",
+      "en": "Standing mannequin figure with weight on one leg, opposite hip and shoulder tilted, one hand resting on the hip."
+    },
     "category": "standing",
     "duration": "10",
-    "difficulty": 1,
-    "tip": "Put your weight on one leg and let the other relax — hips and shoulders tilt in opposite directions.",
-    "advice": [
-      "Lock the knee of the standing leg softly, not hard — a fully locked knee gets tiring.",
-      "Rest a hand on the hip of the relaxed side to keep the arm stable.",
-      "Choose a fixed point on the wall for your gaze so your head returns to the same angle."
-    ],
-    "tags": [
-      "classic",
-      "weight shift",
-      "beginner-friendly"
-    ],
+    "tip": {
+      "cs": "Váha na jedné noze, druhá povolená — boky a ramena se nakloní proti sobě. Ruku si můžeš opřít o bok.",
+      "en": "Weight on one leg, the other relaxed — hips and shoulders tilt in opposite directions. Rest a hand on your hip."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "overhead-stretch",
-    "title": "Overhead Stretch",
+    "title": {
+      "cs": "Protažení nad hlavou",
+      "en": "Overhead Stretch"
+    },
     "image": "/poses/overhead-stretch.svg",
-    "imageAlt": "Standing figure stretching both arms straight above the head.",
+    "imageAlt": {
+      "cs": "Stojící figura s oběma rukama nataženýma nad hlavou.",
+      "en": "Standing figure stretching both arms straight above the head."
+    },
     "category": "standing",
     "duration": "3-5",
-    "difficulty": 2,
-    "tip": "A long vertical line from heels to fingertips. Keep it short — raised arms tire quickly.",
-    "advice": [
-      "Interlace your fingers or hold one wrist to share the load between both arms.",
-      "Keep your shoulders away from your ears; let the shoulder blades drop.",
-      "Lower the arms slightly if your hands start tingling — a small change is fine."
-    ],
-    "tags": [
-      "vertical",
-      "stretch",
-      "short hold"
-    ],
+    "tip": {
+      "cs": "Dlouhá svislá linie od pat po prsty. Drž ji krátce — zvednuté ruce rychle unaví.",
+      "en": "A long vertical line from heels to fingertips. Keep it short — raised arms tire quickly."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "over-the-shoulder",
-    "title": "Glance Over the Shoulder",
+    "title": {
+      "cs": "Pohled přes rameno",
+      "en": "Glance Over the Shoulder"
+    },
     "image": "/poses/over-the-shoulder.svg",
-    "imageAlt": "Figure turned three-quarters away, head looking back over the shoulder, one hand on the hip.",
+    "imageAlt": {
+      "cs": "Figura otočená zády, hlava se dívá přes rameno.",
+      "en": "Figure turned three-quarters away, head looking back over the shoulder, one hand on the hip."
+    },
     "category": "standing",
     "duration": "10",
-    "difficulty": 1,
-    "tip": "Turn the body away and bring the head back toward the room. The twist creates instant interest.",
-    "advice": [
-      "Turn mostly from the hips and ribcage; keep the neck rotation gentle.",
-      "Place the hand of the turned side on the hip to anchor the shoulders.",
-      "Pick a gaze point you can comfortably hold for the full pose."
-    ],
-    "tags": [
-      "twist",
-      "three-quarter",
-      "back view"
-    ],
+    "tip": {
+      "cs": "Otoč tělo bokem a hlavu vrať zpátky do místnosti. Otáčej se hlavně v trupu, krk nech volný.",
+      "en": "Turn the body away and bring the head back toward the room. Rotate mostly through the torso, keep the neck easy."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "stool-thinker",
-    "title": "Forward Lean on a Stool",
+    "title": {
+      "cs": "Předklon na stoličce",
+      "en": "Forward Lean on a Stool"
+    },
     "image": "/poses/stool-thinker.svg",
-    "imageAlt": "Figure seated on a stool, leaning forward with forearms resting on the thighs.",
+    "imageAlt": {
+      "cs": "Figura sedící na stoličce v předklonu, předloktí na stehnech.",
+      "en": "Figure seated on a stool, leaning forward with forearms resting on the thighs."
+    },
     "category": "seated",
     "duration": "15-20",
-    "difficulty": 1,
-    "tip": "Lean forward and let your forearms rest on your thighs — the stool and legs carry the weight.",
-    "advice": [
-      "Spread your feet a little wider than your hips for a stable base.",
-      "Rest your forearms rather than your elbows to avoid pressure points.",
-      "Let your head hang naturally; holding it high gets tiring over 20 minutes."
-    ],
-    "tags": [
-      "stool",
-      "long pose",
-      "supported"
-    ],
+    "tip": {
+      "cs": "Předkloň se a opři předloktí o stehna — váhu nese stolička a nohy. Hlavu nech volně klesnout.",
+      "en": "Lean forward and rest your forearms on your thighs — the stool and legs carry the weight. Let the head hang naturally."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "floor-lean-back",
-    "title": "Floor Sit, Leaning Back",
+    "title": {
+      "cs": "Sed v záklonu",
+      "en": "Floor Sit, Leaning Back"
+    },
     "image": "/poses/floor-lean-back.svg",
-    "imageAlt": "Figure sitting on the floor, leaning back on both hands, one knee raised.",
+    "imageAlt": {
+      "cs": "Figura sedící na zemi, opřená dozadu o ruce, jedno koleno pokrčené.",
+      "en": "Figure sitting on the floor, leaning back on both hands, one knee raised."
+    },
     "category": "floor",
     "duration": "10",
-    "difficulty": 1,
-    "tip": "Sit on the floor, lean back on your hands and bend one knee — an open, relaxed triangle shape.",
-    "advice": [
-      "Place your hands slightly turned outward to protect the wrists.",
-      "Bend one knee up to create varied shapes for the artists.",
-      "Ask for a cushion or mat so the floor stays comfortable."
-    ],
-    "tags": [
-      "floor",
-      "open shape",
-      "mat"
-    ],
+    "tip": {
+      "cs": "Seď na zemi, opři se dozadu o dlaně a jedno koleno pokrč. Dlaně natoč mírně ven, ušetříš zápěstí.",
+      "en": "Sit on the floor, lean back on your hands and bend one knee. Turn the hands slightly outward to spare the wrists."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "reclining-propped",
-    "title": "Side Recline, Head Propped",
+    "title": {
+      "cs": "Leh na boku",
+      "en": "Side Recline"
+    },
     "image": "/poses/reclining-propped.svg",
-    "imageAlt": "Figure lying on its side, upper body raised, head propped on one hand, top knee bent.",
+    "imageAlt": {
+      "cs": "Figura ležící na boku, hlava podepřená rukou, horní koleno pokrčené.",
+      "en": "Figure lying on its side, upper body raised, head propped on one hand, top knee bent."
+    },
     "category": "floor",
     "duration": "15-20",
-    "difficulty": 1,
-    "tip": "Lie on your side with your head resting on one hand. One of the most sustainable long poses.",
-    "advice": [
-      "Use a cushion under the hip and under the propping elbow.",
-      "Bend the top knee forward to keep the pelvis from rolling.",
-      "If the propping arm gets heavy, rest your head on the forearm instead — mention it to the organizer."
-    ],
-    "tags": [
-      "reclining",
-      "long pose",
-      "cushion"
-    ],
+    "tip": {
+      "cs": "Lehni si na bok a hlavu si podepři rukou. S polštářem pod loktem a boky vydržíš dlouho.",
+      "en": "Lie on your side with your head resting on one hand. A cushion under the elbow and hip makes it last."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "forward-lunge-reach",
-    "title": "Lunge and Reach",
+    "title": {
+      "cs": "Výpad",
+      "en": "Lunge and Reach"
+    },
     "image": "/poses/forward-lunge-reach.svg",
-    "imageAlt": "Figure in a forward lunge with one arm reaching far ahead and the other extended back.",
-    "category": "dynamic",
+    "imageAlt": {
+      "cs": "Figura ve výpadu s jednou rukou nataženou daleko dopředu.",
+      "en": "Figure in a forward lunge with one arm reaching far ahead and the other extended back."
+    },
+    "category": "action",
     "duration": "1-2",
-    "difficulty": 3,
-    "tip": "A strong diagonal from back foot to reaching hand. Commit fully — it only lasts a minute or two.",
-    "advice": [
-      "Make the stance wide enough that you don't wobble.",
-      "Reach with intention: extend through the fingertips.",
-      "Keep it to quick gesture rounds — this is not a pose to hold."
-    ],
-    "tags": [
-      "action",
-      "diagonal",
-      "warm-up"
-    ],
+    "tip": {
+      "cs": "Silná diagonála od zadní nohy po natažené prsty. Jen na minutu nebo dvě.",
+      "en": "A strong diagonal from back foot to reaching hand. Only for a minute or two."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "spiral-twist",
-    "title": "Spiral Twist",
+    "title": {
+      "cs": "Spirála",
+      "en": "Spiral Twist"
+    },
     "image": "/poses/spiral-twist.svg",
-    "imageAlt": "Standing figure twisting through the torso, one arm raised high, the other low.",
-    "category": "dynamic",
+    "imageAlt": {
+      "cs": "Stojící figura v otočení trupu, jedna ruka vysoko nahoře.",
+      "en": "Standing figure twisting through the torso, one arm raised high, the other low."
+    },
+    "category": "action",
     "duration": "1-2",
-    "difficulty": 2,
-    "tip": "Feet face one way, shoulders another. The spiral through the torso gives artists rhythm to chase.",
-    "advice": [
-      "Plant both feet before you rotate the upper body.",
-      "Raise one arm to exaggerate the spiral; keep the other low.",
-      "Breathe out into the twist — don't hold your breath."
-    ],
-    "tags": [
-      "twist",
-      "rhythm",
-      "gesture"
-    ],
+    "tip": {
+      "cs": "Chodidla míří jinam než ramena. Nejdřív pevně postav nohy, pak otoč trup.",
+      "en": "Feet face one way, shoulders another. Plant your feet first, then rotate the torso."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "throwing-gesture",
-    "title": "Throw",
+    "title": {
+      "cs": "Hod",
+      "en": "Throw"
+    },
     "image": "/poses/throwing-gesture.svg",
-    "imageAlt": "Figure caught mid-throw, one arm drawn back, the other extended forward.",
-    "category": "gestural",
+    "imageAlt": {
+      "cs": "Figura zachycená před hodem, jedna paže vzadu.",
+      "en": "Figure caught mid-throw, one arm drawn back, the other extended forward."
+    },
+    "category": "action",
     "duration": "1-2",
-    "difficulty": 2,
-    "tip": "Freeze the moment just before a throw — arm drawn back, weight loaded on the back leg.",
-    "advice": [
-      "Think of a real action; imagined movement reads as more convincing.",
-      "Lean the torso clearly away from the throwing direction.",
-      "Keep the stance stable enough to hold still for the whole minute."
-    ],
-    "tags": [
-      "action",
-      "storytelling",
-      "warm-up"
-    ],
+    "tip": {
+      "cs": "Zastav okamžik těsně před hodem — paže vzadu, váha na zadní noze.",
+      "en": "Freeze the moment just before a throw — arm drawn back, weight on the back leg."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "hands-on-thighs",
-    "title": "Bent Forward, Hands on Thighs",
+    "title": {
+      "cs": "Předklon s oporou",
+      "en": "Bent Forward"
+    },
     "image": "/poses/hands-on-thighs.svg",
-    "imageAlt": "Figure bent forward at the hips with both hands resting on the thighs.",
-    "category": "gestural",
+    "imageAlt": {
+      "cs": "Figura v předklonu s dlaněmi opřenými o stehna.",
+      "en": "Figure bent forward at the hips with both hands resting on the thighs."
+    },
+    "category": "action",
     "duration": "3-5",
-    "difficulty": 2,
-    "tip": "Hinge from the hips and rest your hands on your thighs — a clear, readable bend.",
-    "advice": [
-      "Keep a soft bend in the knees to protect the lower back.",
-      "Let your hands take some of the upper body weight.",
-      "Look down or ahead — choose what's easier on the neck."
-    ],
-    "tags": [
-      "bend",
-      "silhouette",
-      "short hold"
-    ],
+    "tip": {
+      "cs": "Předkloň se v kyčlích a opři dlaně o stehna. Kolena nech lehce pokrčená.",
+      "en": "Hinge at the hips and rest your hands on your thighs. Keep the knees soft."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "staff-lean",
-    "title": "Leaning on a Staff",
+    "title": {
+      "cs": "Opora o tyč",
+      "en": "Leaning on a Staff"
+    },
     "image": "/poses/staff-lean.svg",
-    "imageAlt": "Standing figure leaning lightly on a tall staff held with one hand.",
-    "category": "relaxed",
+    "imageAlt": {
+      "cs": "Stojící figura lehce opřená o vysokou tyč.",
+      "en": "Standing figure leaning lightly on a tall staff held with one hand."
+    },
+    "category": "standing",
     "duration": "15-20",
-    "difficulty": 1,
-    "tip": "A staff or pole adds a second support point and lets you hold an elegant line for longer.",
-    "advice": [
-      "Place the staff a little in front of you so you can lean into it.",
-      "Hold it at shoulder height or below; higher gets tiring.",
-      "Ask the organizer whether a staff, pole or broom handle is available."
-    ],
-    "tags": [
-      "prop",
-      "long pose",
-      "supported"
-    ],
+    "tip": {
+      "cs": "Tyč přidá druhý bod opory a čistou linii udržíš mnohem déle. Drž ji maximálně ve výši ramen.",
+      "en": "A staff adds a second point of support, so you can hold the line much longer. Hold it at shoulder height or below."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "folded-arms",
-    "title": "Folded Arms, Weight Shifted",
+    "title": {
+      "cs": "Založené ruce",
+      "en": "Folded Arms"
+    },
     "image": "/poses/folded-arms.svg",
-    "imageAlt": "Standing figure with arms folded across the chest and weight shifted to one leg.",
-    "category": "relaxed",
+    "imageAlt": {
+      "cs": "Stojící figura se založenýma rukama na hrudi.",
+      "en": "Standing figure with arms folded across the chest and weight shifted to one leg."
+    },
+    "category": "standing",
     "duration": "15-20",
-    "difficulty": 1,
-    "tip": "A calm, natural standing pose. Folded arms keep the shoulders relaxed and the hands still.",
-    "advice": [
-      "Shift the weight to one leg, then back to centre if you need a micro-rest.",
-      "Fold the arms loosely — tight arms cut off circulation.",
-      "Breathe slowly; this pose rewards stillness."
-    ],
-    "tags": [
-      "natural",
-      "long pose",
-      "standing"
-    ],
+    "tip": {
+      "cs": "Klidný přirozený stoj s váhou na jedné noze. Ruce založ volně, ne pevně.",
+      "en": "A calm, natural stance with weight on one leg. Fold the arms loosely, not tightly."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "kneeling-arch",
-    "title": "Kneeling Arch",
+    "title": {
+      "cs": "Záklon v kleku",
+      "en": "Kneeling Arch"
+    },
     "image": "/poses/kneeling-arch.svg",
-    "imageAlt": "Kneeling figure arching back, chest open, hands behind the head.",
-    "category": "dramatic",
+    "imageAlt": {
+      "cs": "Klečící figura v záklonu s rukama za hlavou.",
+      "en": "Kneeling figure arching back, chest open, hands behind the head."
+    },
+    "category": "action",
     "duration": "3-5",
-    "difficulty": 3,
-    "tip": "Kneel, open the chest and tip the head back with hands behind it. Expressive — and demanding.",
-    "advice": [
-      "Always kneel on a cushion or folded mat.",
-      "Arch from the upper back, not by crunching the lower back.",
-      "Come out slowly at the end; give yourself a moment before standing."
-    ],
-    "tags": [
-      "expressive",
-      "kneeling",
-      "cushion"
-    ],
+    "tip": {
+      "cs": "Otevři hrudník a zakloň hlavu s rukama za ní. Výrazné, ale náročné — vždy na podložce.",
+      "en": "Open the chest and tip the head back, hands behind it. Expressive but demanding — always on a cushion."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "heroic-reach",
-    "title": "Heroic Reach",
+    "title": {
+      "cs": "Natažení vzhůru",
+      "en": "Heroic Reach"
+    },
     "image": "/poses/heroic-reach.svg",
-    "imageAlt": "Figure with one foot raised on a stool, reaching up along a tall staff.",
-    "category": "dramatic",
+    "imageAlt": {
+      "cs": "Figura s jednou nohou na stoličce, ruka natažená vzhůru po tyči.",
+      "en": "Figure with one foot raised on a stool, reaching up along a tall staff."
+    },
+    "category": "action",
     "duration": "3-5",
-    "difficulty": 2,
-    "tip": "One foot raised on a stool, one arm reaching up along a staff — a monumental, sculptural pose.",
-    "advice": [
-      "Check the stool is stable before stepping onto it.",
-      "Keep the raised hand gripping the staff so the arm can rest on it.",
-      "Keep the standing knee soft."
-    ],
-    "tags": [
-      "prop",
-      "stool",
-      "monumental"
-    ],
+    "tip": {
+      "cs": "Jedna noha na stoličce, ruka jde vzhůru po tyči. Ověř si, že stolička stojí pevně.",
+      "en": "One foot on a stool, one hand reaching up a staff. Check the stool is stable first."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "stool-twist",
-    "title": "Twisted on a Stool",
+    "title": {
+      "cs": "Pootočení na stoličce",
+      "en": "Twisted on a Stool"
+    },
     "image": "/poses/stool-twist.svg",
-    "imageAlt": "Figure seated on a stool with the torso turned, one leg extended, one tucked back.",
+    "imageAlt": {
+      "cs": "Figura sedící na stoličce s pootočeným trupem.",
+      "en": "Figure seated on a stool with the torso turned, one leg extended, one tucked back."
+    },
     "category": "seated",
     "duration": "10",
-    "difficulty": 2,
-    "tip": "Sit on a stool, turn your shoulders away from your knees and tuck one leg back.",
-    "advice": [
-      "Let the stool take your weight; the twist should feel easy, not forced.",
-      "Rest one hand on the stool behind you for support.",
-      "Turn the head with the shoulders to avoid neck strain."
-    ],
-    "tags": [
-      "stool",
-      "twist",
-      "asymmetry"
-    ],
+    "tip": {
+      "cs": "Seď na stoličce, ramena otoč od kolen a jednu nohu zasuň dozadu. Hlava se otáčí s rameny.",
+      "en": "Sit on a stool, turn the shoulders away from the knees and tuck one leg back. Turn the head with the shoulders."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   },
   {
     "id": "kneeling-rest",
-    "title": "Kneeling Rest",
+    "title": {
+      "cs": "Klek na jedno koleno",
+      "en": "Kneeling Rest"
+    },
     "image": "/poses/kneeling-rest.svg",
-    "imageAlt": "Figure kneeling on one knee with the other foot planted and a forearm resting on the raised knee.",
-    "category": "relaxed",
+    "imageAlt": {
+      "cs": "Figura klečící na jednom koleni s předloktím opřeným o druhé.",
+      "en": "Figure kneeling on one knee with the other foot planted and a forearm resting on the raised knee."
+    },
+    "category": "floor",
     "duration": "10",
-    "difficulty": 1,
-    "tip": "One knee down, one foot planted, forearm resting on the raised knee. Grounded and calm.",
-    "advice": [
-      "Put a cushion under the kneeling knee.",
-      "Let the forearm rest on the raised knee rather than holding it up.",
-      "Swap sides on the next pose to give the knee a break."
-    ],
-    "tags": [
-      "kneeling",
-      "grounded",
-      "cushion"
-    ],
+    "tip": {
+      "cs": "Jedno koleno na zemi, předloktí opřené o druhé. Pod koleno si dej polštář.",
+      "en": "One knee down, forearm resting on the other. Put a cushion under the kneeling knee."
+    },
     "credit": {
-      "author": "Model Companion — original diagram",
-      "license": "Placeholder artwork created for this app. Replace with licensed reference photography.",
+      "author": "Model Companion",
+      "license": "Original placeholder diagram",
       "placeholder": true
     }
   }

@@ -1,185 +1,181 @@
-import type { GuideLesson } from '../types';
+import type { GuideLesson, PrepBlock } from '../types';
 
-/**
- * Model Guide — short, friendly lessons. Not formal training:
- * every model works in their own way.
- */
+/** Five short principles, each with a tap-to-compare illustration. */
 export const LESSONS: GuideLesson[] = [
   {
     id: 'silhouette',
-    number: 1,
-    title: 'Silhouette and readability',
-    summary: 'If the pose reads as a solid shadow, it reads from every seat in the room.',
-    body: [
-      'Artists see you from many angles at once. A pose with clear shapes — arms away from the body, legs apart, gaps of space between limbs — is easier to read and more rewarding to draw.',
-      'Those gaps are called negative space. When arms hug the body, the figure merges into one block and much of the gesture disappears.',
-    ],
+    title: { cs: 'Čitelná silueta', en: 'A readable silhouette' },
+    text: {
+      cs: 'Umělci tě vidí z mnoha úhlů najednou. Když ruce a nohy nejsou přitisknuté k tělu, vzniknou mezi nimi mezery a póza je čitelná z každého místa v místnosti.',
+      en: 'Artists see you from many angles at once. When arms and legs are not pressed to the body, gaps of space appear and the pose reads from every seat in the room.',
+    },
     views: [
       {
-        label: 'Closed',
+        label: { cs: 'Uzavřená', en: 'Closed' },
         image: '/guide/silhouette-closed.svg',
-        alt: 'Filled silhouette of a figure standing with arms tight against the body.',
-        caption: 'Arms against the body — the shape becomes a single column.',
+        alt: { cs: 'Silueta s rukama u těla.', en: 'Silhouette with arms against the body.' },
+        caption: { cs: 'Ruce u těla — figura splyne v jeden blok.', en: 'Arms against the body — the figure becomes one block.' },
       },
       {
-        label: 'Open',
+        label: { cs: 'Otevřená', en: 'Open' },
         image: '/guide/silhouette-open.svg',
-        alt: 'Filled silhouette of a figure with one hand on the hip, creating a gap between arm and body.',
-        caption: 'A hand on the hip opens a window of negative space.',
+        alt: { cs: 'Silueta s rukou opřenou o bok.', en: 'Silhouette with a hand on the hip.' },
+        caption: { cs: 'Ruka v bok otevře okno mezi paží a tělem.', en: 'A hand on the hip opens a window of space.' },
       },
     ],
-    takeaway: 'Imagine your pose as a shadow on the wall. Can you see where the arms and legs are?',
+    takeaway: {
+      cs: 'Představ si svou pózu jako stín na zdi. Je poznat, kde máš ruce a nohy?',
+      en: 'Imagine your pose as a shadow on the wall. Can you tell where the arms and legs are?',
+    },
   },
   {
     id: 'angles',
-    number: 2,
-    title: 'Variety and body angles',
-    summary: 'Turn, tilt and twist — symmetry is the enemy of an interesting drawing.',
-    body: [
-      'A figure facing straight ahead with both sides mirrored is calm but flat. Turning the body three-quarters, tilting the head or shifting the hips gives artists overlaps, foreshortening and rhythm.',
-      'Across a session, try to vary direction: some poses facing the room, some turned, some from the back. Everyone around you gets a different view.',
-    ],
+    title: { cs: 'Natoč se', en: 'Turn and tilt' },
+    text: {
+      cs: 'Postoj čelem a souměrně je klidný, ale plochý. Pootočení těla, náklon hlavy nebo přenesení váhy dá kresbě rytmus. Mezi pózami střídej směr, ať má každý jiný pohled.',
+      en: 'Facing straight ahead and symmetric is calm but flat. Turning the body, tilting the head or shifting weight gives the drawing rhythm. Vary direction between poses so everyone gets a different view.',
+    },
     views: [
       {
-        label: 'Frontal',
+        label: { cs: 'Čelem', en: 'Frontal' },
         image: '/guide/angles-frontal.svg',
-        alt: 'Figure standing straight, facing forward, symmetrical.',
-        caption: 'Frontal and symmetric — stable, but little to discover.',
+        alt: { cs: 'Souměrná figura stojící čelem.', en: 'Symmetric figure facing forward.' },
+        caption: { cs: 'Souměrné a stabilní, ale málo k objevování.', en: 'Symmetric and stable, but little to discover.' },
       },
       {
-        label: 'Turned',
+        label: { cs: 'Pootočená', en: 'Turned' },
         image: '/guide/angles-turned.svg',
-        alt: 'Figure turned three-quarters away, looking back over the shoulder.',
-        caption: 'Turned body, head looking back — instantly more to draw.',
+        alt: { cs: 'Figura otočená bokem, hlava přes rameno.', en: 'Figure turned away, looking over the shoulder.' },
+        caption: { cs: 'Pootočené tělo a hlava — hned je co kreslit.', en: 'Turned body and head — instantly more to draw.' },
       },
     ],
-    takeaway: 'Change at least one direction between poses: body, head or weight.',
+    takeaway: {
+      cs: 'Mezi pózami změň aspoň jednu věc: směr těla, hlavy nebo váhy.',
+      en: 'Change at least one thing between poses: body, head or weight.',
+    },
   },
   {
     id: 'balance',
-    number: 3,
-    title: 'Balance and stability',
-    summary: 'A pose you can hold is a pose you can hold still.',
-    body: [
-      'Picture a plumb line dropping from the pit of your neck. When it lands between or near your feet, you are balanced. When it falls outside your base, muscles start working hard to keep you up — and small tremors begin.',
-      'Extra points of contact — a staff, a wall, a stool, a hand on the knee — make even expressive poses steady.',
-    ],
+    title: { cs: 'Rovnováha', en: 'Balance' },
+    text: {
+      cs: 'Představ si olovnici spuštěnou z jamky na krku. Když dopadne mezi chodidla, stojíš stabilně. Když dopadne mimo, svaly pracují a tělo se začne třást. Další bod opory — tyč, zeď, stolička — pomůže i u výrazné pózy.',
+      en: 'Imagine a plumb line dropping from the pit of your neck. If it lands between your feet, you are stable. If it falls outside, muscles work hard and you start to tremble. An extra point of support — a staff, a wall, a stool — steadies even an expressive pose.',
+    },
     views: [
       {
-        label: 'Unsupported',
+        label: { cs: 'Bez opory', en: 'Unsupported' },
         image: '/guide/balance-unsupported.svg',
-        alt: 'Figure balancing on one foot with arms out, a dashed plumb line from the neck.',
-        caption: 'One foot, arms out — beautiful for a minute, shaky after that.',
+        alt: { cs: 'Figura na jedné noze s olovnicí.', en: 'Figure on one foot with a plumb line.' },
+        caption: { cs: 'Na jedné noze — krásné na minutu, pak se třese.', en: 'One foot — beautiful for a minute, then shaky.' },
       },
       {
-        label: 'Supported',
+        label: { cs: 'S oporou', en: 'Supported' },
         image: '/guide/balance-supported.svg',
-        alt: 'Figure leaning on a staff, a dashed plumb line falling inside the base.',
-        caption: 'A staff adds a second point of contact.',
+        alt: { cs: 'Figura opřená o tyč s olovnicí.', en: 'Figure leaning on a staff with a plumb line.' },
+        caption: { cs: 'Tyč přidá druhý bod opory.', en: 'A staff adds a second point of contact.' },
       },
     ],
-    takeaway: 'Longer pose? Add a point of support before you start, not halfway through.',
-  },
-  {
-    id: 'dynamic',
-    number: 4,
-    title: 'Dynamic versus static',
-    summary: 'Diagonals feel like movement. Verticals feel like stillness.',
-    body: [
-      'Dynamic poses suggest an action — a lunge, a reach, a throw. They use strong diagonals and asymmetry, and they are perfect for quick gesture drawing.',
-      'Static poses are calm and settled. They give artists time to study proportion, light and form. A good session usually needs both.',
-    ],
-    views: [
-      {
-        label: 'Static',
-        image: '/guide/dynamic-static.svg',
-        alt: 'Calm standing figure with folded arms, vertical plumb line.',
-        caption: 'Vertical and settled — ideal for longer studies.',
-      },
-      {
-        label: 'Dynamic',
-        image: '/guide/dynamic-action.svg',
-        alt: 'Figure in a lunge with a strong diagonal line of action.',
-        caption: 'A diagonal line of action — energy for quick sketches.',
-      },
-    ],
-    takeaway: 'Save the big action for short poses; settle into stillness for long ones.',
+    takeaway: {
+      cs: 'Delší póza? Oporu si přidej hned na začátku, ne v polovině.',
+      en: 'Longer pose? Add support at the start, not halfway through.',
+    },
   },
   {
     id: 'duration',
-    number: 5,
-    title: 'Short versus long poses',
-    summary: 'Match the effort of the pose to how long you need to hold it.',
-    body: [
-      'Short poses (1–2 minutes) are the place for bold, physical, even slightly uncomfortable actions. Nobody has to hold them for long.',
-      'Long poses (15–20 minutes) should be fully supported — seated, reclining or leaning — so you can stay still without strain. The duration tags in the Pose Library are suggestions built on this idea.',
-    ],
+    title: { cs: 'Krátké a dlouhé pózy', en: 'Short and long poses' },
+    text: {
+      cs: 'Krátké pózy (1–2 min) jsou prostor pro akci a diagonály — výpad, natažení, hod. Dlouhé pózy (15–20 min) mají být plně podepřené: v sedu, v lehu nebo s oporou, abys vydržel bez námahy.',
+      en: 'Short poses (1–2 min) are the place for action and diagonals — a lunge, a reach, a throw. Long poses (15–20 min) should be fully supported: seated, reclining or leaning, so you can stay still without strain.',
+    },
     views: [
       {
-        label: '1–2 min',
-        image: '/guide/duration-short.svg',
-        alt: 'Figure caught mid-throw.',
-        caption: 'Short: a frozen moment of action.',
+        label: { cs: '1–2 min', en: '1–2 min' },
+        image: '/guide/dynamic-action.svg',
+        alt: { cs: 'Figura ve výpadu s výraznou diagonálou.', en: 'Figure in a lunge with a strong diagonal.' },
+        caption: { cs: 'Krátká: zmrazený okamžik pohybu.', en: 'Short: a frozen moment of movement.' },
       },
       {
-        label: '15–20 min',
+        label: { cs: '15–20 min', en: '15–20 min' },
         image: '/guide/duration-long.svg',
-        alt: 'Figure reclining on its side with the head propped.',
-        caption: 'Long: everything rests on the floor or a prop.',
+        alt: { cs: 'Figura ležící na boku.', en: 'Figure reclining on its side.' },
+        caption: { cs: 'Dlouhá: všechno spočívá na zemi nebo na podložce.', en: 'Long: everything rests on the floor or a prop.' },
       },
     ],
-    takeaway: 'Ask yourself: could I hold this for twice as long? If not, shorten or support it.',
+    takeaway: {
+      cs: 'Zeptej se sama sebe: vydržel/a bych to dvakrát tak dlouho? Pokud ne, zkrať nebo podepři.',
+      en: 'Ask yourself: could I hold this twice as long? If not, shorten or support it.',
+    },
   },
   {
     id: 'comfort',
-    number: 6,
-    title: 'Comfort and body awareness',
-    summary: 'Raised arms, locked knees and twisted necks are where fatigue starts.',
-    body: [
-      'Arms above the shoulders, weight on one locked knee and strong neck rotation tire the body fastest. Wrists and knees on hard floors come next.',
-      'Notice pins and needles, numbness or sharp pain. A small adjustment is always better than pushing through — artists would much rather you stay comfortable.',
-    ],
+    title: { cs: 'Pohodlí na prvním místě', en: 'Comfort first' },
+    text: {
+      cs: 'Nejrychleji unaví ruce nad úrovní ramen, zamčené koleno a silně otočený krk. Když ucítíš mravenčení, necitlivost nebo bolest, pózu uprav. Malá změna je vždycky lepší než vydržet za každou cenu.',
+      en: 'Arms above the shoulders, a locked knee and a strongly turned neck tire you fastest. If you feel pins and needles, numbness or pain, adjust. A small change is always better than pushing through.',
+    },
     views: [
       {
-        label: 'Strain',
+        label: { cs: 'Námaha', en: 'Strain' },
         image: '/guide/comfort-strain.svg',
-        alt: 'Figure with arms overhead; shoulders and elbow circled as strain points.',
-        caption: 'Circled: the joints doing the hardest work.',
+        alt: { cs: 'Figura s rukama nad hlavou, zakroužkovaná ramena.', en: 'Figure with arms overhead, shoulders circled.' },
+        caption: { cs: 'Zakroužkovaná místa pracují nejvíc.', en: 'Circled: the joints doing the hardest work.' },
       },
       {
-        label: 'Rested',
+        label: { cs: 'Odpočinek', en: 'Rested' },
         image: '/guide/comfort-supported.svg',
-        alt: 'Figure seated on a stool with forearms resting on thighs.',
-        caption: 'Forearms on thighs, weight on the stool — sustainable.',
+        alt: { cs: 'Figura v předklonu na stoličce.', en: 'Figure leaning forward on a stool.' },
+        caption: { cs: 'Předloktí na stehnech, váha na stoličce.', en: 'Forearms on thighs, weight on the stool.' },
       },
     ],
-    takeaway: 'Comfort first. A pose that hurts is never worth holding.',
-  },
-  {
-    id: 'communication',
-    number: 7,
-    title: 'Communication and boundaries',
-    summary: 'You decide what you are comfortable with — and you can change your mind.',
-    body: [
-      'Before the session, tell the organizer anything that matters to you: clothing or nudity preferences, poses or props you would rather avoid, injuries, and whether you are comfortable being photographed. All of these are your choices.',
-      'During the session, you can ask for a break, adjust a pose or stop at any time. A practical tip: before a break, mark your feet and hand positions with tape so you can return to the same pose afterwards.',
-    ],
-    views: [
-      {
-        label: 'Before break',
-        image: '/guide/communication-before.svg',
-        alt: 'Figure in pose with tape crosses marking the position of each foot.',
-        caption: 'Tape marks where your feet are before you step out.',
-      },
-      {
-        label: 'After break',
-        image: '/guide/communication-after.svg',
-        alt: 'Silhouette of the same pose stepping back onto the tape marks.',
-        caption: 'Step back onto the marks — the artists can carry on.',
-      },
-    ],
-    takeaway: 'Speak up early and often. Organizers and artists want you to.',
+    takeaway: {
+      cs: 'Póza, která bolí, nestojí za to.',
+      en: 'A pose that hurts is never worth holding.',
+    },
   },
 ];
 
-export const getLesson = (id: string | undefined) => LESSONS.find((l) => l.id === id);
+/**
+ * Practical session notes. Keep these general — exact terms are agreed
+ * with the organizer and live on the official Modeling page.
+ */
+export const PREP: PrepBlock[] = [
+  {
+    id: 'flow',
+    title: { cs: 'Jak sezení obvykle probíhá', en: 'How a session usually flows' },
+    items: [
+      { cs: 'Rozehřátí krátkými pózami (1–2 min).', en: 'A warm-up of very short poses (1–2 min).' },
+      { cs: 'Pak delší pózy a přestávka uprostřed.', en: 'Then longer poses, with a break in the middle.' },
+      { cs: 'Na konci dlouhé pózy (15–20 min), často v sedu nebo v lehu.', en: 'Long poses at the end (15–20 min), often seated or reclining.' },
+      { cs: 'Čas hlídá organizátor — vlastní stopky nepotřebuješ.', en: 'The organizer keeps time — you don’t need a timer.' },
+    ],
+  },
+  {
+    id: 'bring',
+    title: { cs: 'Co si vzít s sebou', en: 'What to bring' },
+    items: [
+      { cs: 'Župan nebo něco, co rychle přehodíš.', en: 'A robe or something easy to slip on.' },
+      { cs: 'Přezůvky nebo teplé ponožky.', en: 'Slip-on shoes or warm socks.' },
+      { cs: 'Vodu a něco malého k jídlu.', en: 'Water and a small snack.' },
+      { cs: 'Gumičku do vlasů, pokud máš dlouhé vlasy.', en: 'A hair tie if you have long hair.' },
+    ],
+  },
+  {
+    id: 'comfort',
+    title: { cs: 'Přestávky a pohodlí', en: 'Breaks and comfort' },
+    items: [
+      { cs: 'O pauzu můžeš požádat kdykoli a nemusíš ji vysvětlovat.', en: 'You can ask for a break at any time, no explanation needed.' },
+      { cs: 'Předem se zeptej na převlékárnu, topení a kam si dát věci.', en: 'Ask in advance about a changing space, heating and where to leave your things.' },
+      { cs: 'Před přestávkou si polohu chodidel označ páskou, ať se do pózy vrátíš.', en: 'Before a break, mark your feet with tape so you can return to the pose.' },
+    ],
+  },
+  {
+    id: 'boundaries',
+    title: { cs: 'Hranice a soukromí', en: 'Boundaries and privacy' },
+    items: [
+      { cs: 'Oblečení i nahota jsou jen tvoje volba. Pózy v appce jsou návrhy, ne požadavky.', en: 'Clothing and nudity are entirely your choice. Poses here are suggestions, not requirements.' },
+      { cs: 'Řekni organizátorovi o zraněních, omezeních nebo pózách, které nechceš.', en: 'Tell the organizer about injuries, limits or poses you would rather avoid.' },
+      { cs: 'Zeptej se, jak se řeší focení, a jasně řekni, jestli souhlasíš.', en: 'Ask how photography is handled, and say clearly whether you agree to it.' },
+      { cs: 'Kdykoli ti něco nebude příjemné, řekni to. Skončit můžeš kdykoli.', en: 'If anything feels uncomfortable, say so. You can stop at any time.' },
+    ],
+  },
+];

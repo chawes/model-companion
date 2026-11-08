@@ -1,68 +1,59 @@
 import { ArrowRight, Bookmark } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { PoseGallery } from '../components/PoseGallery';
-import { ButtonLink, PageIntro } from '../components/ui';
-import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { useSavedPoses } from '../hooks/useSavedPoses';
+import { useDocumentTitle, useLang } from '../i18n/LangContext';
 
 export function SavedPage() {
-  useDocumentTitle('My Poses');
+  const { t } = useLang();
+  useDocumentTitle(t('savedTitle'));
   const { savedPoses, clearSaved } = useSavedPoses();
   const [confirming, setConfirming] = useState(false);
 
   useEffect(() => {
     if (!confirming) return;
-    const t = window.setTimeout(() => setConfirming(false), 4000);
-    return () => window.clearTimeout(t);
+    const timer = window.setTimeout(() => setConfirming(false), 4000);
+    return () => window.clearTimeout(timer);
   }, [confirming]);
 
-  return (
-    <>
-      <PageIntro
-        eyebrow="My Poses"
-        title={
-          <>
-            Your <em className="text-sanguine">collection</em>
-          </>
-        }
-        aside={
-          savedPoses.length > 0 ? (
-            <button
-              type="button"
-              onClick={() => (confirming ? (clearSaved(), setConfirming(false)) : setConfirming(true))}
-              className={`self-start text-sm underline-offset-4 hover:underline md:self-end ${confirming ? 'text-sanguine' : 'text-ink-soft'}`}
-            >
-              {confirming ? 'Tap again to remove all' : 'Clear collection'}
-            </button>
-          ) : null
-        }
-      >
-        {savedPoses.length > 0
-          ? `${savedPoses.length} saved ${savedPoses.length === 1 ? 'pose' : 'poses'}, kept on this device only — no account needed.`
-          : 'Poses you bookmark appear here. They stay on this device — no account needed.'}
-      </PageIntro>
+  const onClear = () => {
+    if (confirming) {
+      clearSaved();
+      setConfirming(false);
+    } else {
+      setConfirming(true);
+    }
+  };
 
-      <div className="mx-auto max-w-6xl px-5 md:px-8">
-        {savedPoses.length > 0 ? (
-          <PoseGallery poses={savedPoses} />
-        ) : (
-          <div className="flex flex-col items-center rounded-[4px] border border-dashed border-line px-6 py-16 text-center md:py-24">
-            <div className="relative">
-              <div className="grid size-20 place-items-center rounded-full bg-paper-deep">
-                <Bookmark size={30} strokeWidth={1.3} className="text-ink-soft" aria-hidden />
-              </div>
-              <span className="absolute -right-1 -top-1 size-4 rounded-full bg-sanguine" aria-hidden />
-            </div>
-            <h2 className="mt-6 font-display text-[2rem] leading-tight">An empty sketchbook</h2>
-            <p className="mt-2 max-w-sm text-ink-soft">
-              Browse the library and tap the bookmark on any pose you'd like to try. Your picks will wait here for the next session.
-            </p>
-            <ButtonLink to="/poses" className="mt-7">
-              Explore poses <ArrowRight size={18} aria-hidden />
-            </ButtonLink>
-          </div>
+  return (
+    <div className="mx-auto max-w-6xl px-5 md:px-8">
+      <header className="flex flex-col gap-4 pb-8 pt-8 md:flex-row md:items-end md:justify-between md:pb-10 md:pt-14">
+        <div>
+          <h1 className="font-display text-[2.8rem] leading-[0.98] tracking-tight md:text-[4.2rem]">{t('savedTitle')}</h1>
+          <p className="mt-3 text-ink-soft">{t('savedIntro')}</p>
+        </div>
+        {savedPoses.length > 0 && (
+          <button type="button" onClick={onClear} className={`self-start text-sm underline-offset-4 hover:underline ${confirming ? 'text-sanguine' : 'text-ink-soft'}`}>
+            {confirming ? t('savedClearConfirm') : t('savedClear')}
+          </button>
         )}
-      </div>
-    </>
+      </header>
+
+      {savedPoses.length > 0 ? (
+        <PoseGallery poses={savedPoses} />
+      ) : (
+        <div className="flex flex-col items-center rounded-[4px] border border-dashed border-line px-6 py-16 text-center">
+          <div className="grid size-16 place-items-center rounded-full bg-paper-deep">
+            <Bookmark size={26} strokeWidth={1.4} className="text-ink-soft" aria-hidden />
+          </div>
+          <h2 className="mt-5 font-display text-[1.8rem] leading-tight">{t('savedEmptyTitle')}</h2>
+          <p className="mt-2 max-w-sm text-ink-soft">{t('savedEmptyText')}</p>
+          <Link to="/" className="mt-6 inline-flex h-12 items-center gap-2 rounded-full bg-ink px-6 text-[0.95rem] font-medium text-paper-bright hover:bg-ink/85">
+            {t('savedBrowse')} <ArrowRight size={18} aria-hidden />
+          </Link>
+        </div>
+      )}
+    </div>
   );
 }

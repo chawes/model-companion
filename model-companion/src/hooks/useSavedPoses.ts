@@ -20,11 +20,3 @@ export function useSavedPoses() {
     clearSaved: store.clear,
   };
 }
-
-const READ_KEY = 'model-companion:read-lessons:v1';
-
-/** Guide lessons the visitor has opened — a light progress indicator. */
-export function useReadLessons() {
-  const store = useStoredSet(READ_KEY);
-  return { isRead: store.has, markRead: store.add };
-}

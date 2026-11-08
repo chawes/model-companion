@@ -86,50 +86,42 @@ All pose data lives in **`src/data/poses.json`**. Images live in **`public/poses
 1. Put the image into `public/poses/`, e.g. `public/poses/seated-cross-legged.jpg`.
    - Portrait **4:5** ratio works best (e.g. 1600 × 2000 px).
    - Export as JPG or WebP, ideally under ~300 KB.
-2. Add an entry to `poses.json`:
+2. Add an entry to `poses.json` (every text in Czech and English):
 
 ```json
 {
   "id": "seated-cross-legged",
-  "title": "Seated Cross-Legged",
+  "title": { "cs": "Turecký sed", "en": "Seated Cross-Legged" },
   "image": "/poses/seated-cross-legged.jpg",
-  "imageAlt": "Model sitting cross-legged on a cushion, hands resting on the knees.",
+  "imageAlt": { "cs": "Figura v tureckém sedu na polštáři.", "en": "Figure sitting cross-legged on a cushion." },
   "category": "floor",
   "duration": "15-20",
-  "difficulty": 1,
-  "tip": "One sentence shown at the top of the detail page.",
-  "advice": ["Practical point one.", "Practical point two."],
-  "tags": ["floor", "long pose"],
+  "tip": { "cs": "Jedna krátká praktická rada.", "en": "One short practical tip." },
   "credit": {
-    "author": "Photo: Jane Doe for Drawing Club Prague",
-    "license": "Used with the model's and photographer's written permission.",
-    "url": "https://optional-link"
+    "author": "Model Companion",
+    "license": "AI-generated illustration, reviewed by DCP",
+    "aiGenerated": true
   }
 }
 ```
 
 Allowed values:
 
-- `category`: `standing`, `seated`, `floor`, `dynamic`, `gestural`, `relaxed`, `dramatic`
+- `category`: `standing`, `seated`, `floor`, `action`
 - `duration`: `1-2`, `3-5`, `10`, `15-20`
-- `difficulty`: `1` (easy hold), `2` (moderate), `3` (demanding)
 - `id` must be unique, lowercase, with dashes — it becomes the URL.
 
-**Licensing rule:** only use images you have permission for, and write the real
-licence/permission in `credit`. Never guess a licence. Remove `"placeholder": true`
-when you replace a placeholder diagram.
+**Licensing rule:** only use images you have the right to use and describe them honestly in
+`credit` (`aiGenerated: true` for AI images). Remove `"placeholder": true` when you replace
+a placeholder diagram.
 
-To replace a placeholder with a real photo, change its `image` path and `credit`;
-the old SVG can be deleted.
+### Texts and languages
 
-Plate numbers ("No. 01") follow the order in `poses.json`.
+- Interface texts: `src/i18n/strings.ts` (Czech + English)
+- Guide principles and session notes: `src/data/guide.ts`
+- The app picks Czech for Czech/Slovak phones, English otherwise; the CS/EN switch remembers the choice. `?lang=en` in a link forces English.
 
-### Guide and Session Prep text
-
-- Guide lessons: `src/data/guide.ts` (illustrations in `public/guide/`)
-- Session Prep: `src/data/prep.ts` — keep it general; exact terms belong on the official
-  Modeling page.
-- External links: `src/data/site.ts`
+Poses appear in the order of `poses.json`.
 
 ## 6. Project structure
 

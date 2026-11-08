@@ -1,17 +1,19 @@
-import { BookOpen, Bookmark, ClipboardList, House, LayoutGrid, type LucideIcon } from 'lucide-react';
+import { BookOpen, Bookmark, LayoutGrid, type LucideIcon } from 'lucide-react';
+import type { StringKey } from '../i18n/strings';
 
 export interface NavItem {
   to: string;
-  label: string;
-  short: string;
+  label: StringKey;
   icon: LucideIcon;
   end?: boolean;
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { to: '/', label: 'Home', short: 'Home', icon: House, end: true },
-  { to: '/poses', label: 'Pose Library', short: 'Poses', icon: LayoutGrid },
-  { to: '/guide', label: 'Model Guide', short: 'Guide', icon: BookOpen },
-  { to: '/saved', label: 'My Poses', short: 'Saved', icon: Bookmark },
-  { to: '/prep', label: 'Session Prep', short: 'Prep', icon: ClipboardList },
+  { to: '/', label: 'navPoses', icon: LayoutGrid },
+  { to: '/saved', label: 'navSaved', icon: Bookmark },
+  { to: '/guide', label: 'navGuide', icon: BookOpen },
 ];
+
+/** "/" is active for the library and every pose detail page. */
+export const isNavActive = (to: string, pathname: string) =>
+  to === '/' ? pathname === '/' || pathname.startsWith('/poses') : pathname === to || pathname.startsWith(to + '/');
