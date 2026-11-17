@@ -13,7 +13,7 @@ export function PoseImage({ pose, priority = false, className = '' }: Props) {
   const { l } = useLang();
   const [loaded, setLoaded] = useState(false);
   return (
-    <div className={`relative overflow-hidden bg-paper-deep ${className}`}>
+    <div className={`relative overflow-hidden bg-neutral ${className}`}>
       <img
         src={pose.image}
         alt={l(pose.imageAlt)}

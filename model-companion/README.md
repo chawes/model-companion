@@ -178,3 +178,13 @@ Optional variables: `GITHUB_REPO` (default `chawes/model-companion`), `GITHUB_BR
 
 The token expires according to the date you choose; when it does, /admin shows a GitHub 401 error —
 generate a new one and replace `GITHUB_TOKEN`.
+
+## 9. Brand
+
+Visual identity follows drawingclubprague.com: dark `#121212` background, white text,
+crimson `#C31831` / `#E43737` accents, square corners, typeface **Anybody**
+(Expanded Bold for headlines = width 125 / weight 700, Regular for text), loaded from Google Fonts.
+
+Logos in `public/brand/` are the official DCP files, resized and trimmed; the white
+versions are the same artwork recoloured to white (no redrawing). Tokens live in
+`src/styles/index.css` under `@theme`.

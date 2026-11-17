@@ -20,12 +20,12 @@ export function BookmarkButton({ poseId, variant = 'icon', className = '' }: Pro
         onClick={() => toggleSaved(poseId)}
         aria-pressed={saved}
         className={[
-          'inline-flex h-12 items-center justify-center gap-2 rounded-full px-6 text-[0.95rem] font-medium transition-all duration-300',
-          saved ? 'border border-ink text-ink hover:bg-paper-deep' : 'bg-ink text-paper-bright hover:bg-ink/85',
+          'inline-flex h-12 items-center justify-center gap-2 px-6 text-[0.95rem] font-semibold transition-colors duration-300',
+          saved ? 'border border-fg text-fg hover:border-red-bright' : 'bg-red text-white hover:bg-red-bright',
           className,
         ].join(' ')}
       >
-        <Bookmark size={18} aria-hidden className={saved ? 'fill-sanguine text-sanguine' : ''} />
+        <Bookmark size={18} aria-hidden className={saved ? 'fill-red-bright text-red-bright' : ''} />
         {saved ? t('saved') : t('save')}
       </button>
     );
@@ -42,8 +42,8 @@ export function BookmarkButton({ poseId, variant = 'icon', className = '' }: Pro
       aria-pressed={saved}
       aria-label={saved ? t('unsaveAria') : t('saveAria')}
       className={[
-        'grid size-11 place-items-center rounded-full backdrop-blur-sm transition-all duration-300 active:scale-90',
-        saved ? 'bg-ink text-paper-bright' : 'bg-paper-bright/85 text-ink hover:bg-paper-bright',
+        'grid size-10 place-items-center transition-colors duration-300 active:scale-95',
+        saved ? 'bg-red text-white' : 'bg-black/55 text-white hover:bg-black/80',
         className,
       ].join(' ')}
     >

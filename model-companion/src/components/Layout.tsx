@@ -17,17 +17,17 @@ export function Layout({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <a href="#main" className="sr-only z-50 rounded bg-ink px-4 py-2 text-paper focus:not-sr-only focus:fixed focus:left-4 focus:top-4">
+      <a href="#main" className="sr-only z-50 bg-red px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">
         {t('skip')}
       </a>
       <Header />
       <main id="main" key={pathname} className="flex-1 animate-fade">
         {children}
       </main>
-      <footer className="mt-20 border-t hairline pb-20 md:pb-0">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-[0.82rem] text-ink-soft md:flex-row md:items-center md:justify-between md:px-8">
+      <footer className="mt-20 border-t border-line pb-20 md:pb-0">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-[0.82rem] text-muted md:flex-row md:items-center md:justify-between md:px-8">
           <p className="max-w-md">{t('footer')}</p>
-          <a href={SITE.clubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-ink hover:text-sanguine">
+          <a href={SITE.clubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-fg hover:text-red-bright">
             {SITE.clubName} <ArrowUpRight size={14} aria-hidden />
           </a>
         </div>

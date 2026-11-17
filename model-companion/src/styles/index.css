@@ -1,33 +1,44 @@
 @import 'tailwindcss';
 
 /* ------------------------------------------------------------------
-   Model Companion — design tokens
-   Warm paper, charcoal ink, one restrained accent (sanguine chalk).
+   Model Companion — Drawing Club Prague brand tokens
+   Matched to drawingclubprague.com: dark #121212 surfaces, white text,
+   crimson accents, square corners, Anybody typeface.
 ------------------------------------------------------------------- */
 @theme {
-  --color-paper: #f4f0e8;
-  --color-paper-deep: #ebe5d9;
-  --color-paper-bright: #faf8f3;
-  --color-ink: #1c1b19;
-  --color-ink-soft: #5f5b54;
-  --color-ink-faint: #8f8a80;
-  --color-line: #dcd5c7;
-  --color-sanguine: #a84b2a;
-  --color-sanguine-soft: #f0ddd1;
+  /* surfaces */
+  --color-bg: #121212;
+  --color-surface: #1b1b1b;
+  --color-surface-2: #262626;
+  /* light frame behind reference images */
+  --color-neutral: #f4f4f4;
 
-  --font-display: 'Instrument Serif', ui-serif, Georgia, 'Times New Roman', serif;
-  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* text */
+  --color-fg: #ffffff;
+  --color-muted: #a8a8a8;
+  --color-faint: #777777;
 
-  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  /* hairlines */
+  --color-line: #3a3a3a;
+  --color-rule: #cccccc;
 
-  --animate-enter: enter 0.5s var(--ease-out-soft) both;
-  --animate-fade: fade 0.35s ease-out both;
+  /* accents (sampled from drawingclubprague.com) */
+  --color-red: #c31831; /* buttons, filled blocks */
+  --color-red-bright: #e43737; /* active states, highlights */
+
+  --font-sans: 'Anybody', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Anybody Expanded Bold = width 125, weight 700 (applied via .font-display) */
+  --font-display: 'Anybody', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-none: 0;
+
+  --animate-enter: enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade: fade 0.3s ease-out both;
 
   @keyframes enter {
     from {
       opacity: 0;
-      transform: translateY(8px);
+      transform: translateY(6px);
     }
     to {
       opacity: 1;
@@ -46,8 +57,9 @@
 
 @layer base {
   html {
-    background: var(--color-paper);
-    color: var(--color-ink);
+    background: var(--color-bg);
+    color: var(--color-fg);
+    color-scheme: dark;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     scroll-padding-top: 6rem;
@@ -57,20 +69,25 @@
     font-family: var(--font-sans);
     font-size: 1rem;
     line-height: 1.6;
+    letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
     min-height: 100dvh;
   }
 
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.0625rem;
+    }
+  }
+
   ::selection {
-    background: var(--color-sanguine-soft);
-    color: var(--color-ink);
+    background: var(--color-red);
+    color: #fff;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-sanguine);
+    outline: 2px solid var(--color-red-bright);
     outline-offset: 3px;
-    border-radius: 2px;
   }
 
   img {
@@ -79,23 +96,22 @@
 }
 
 @layer components {
-  /* Small uppercase label — the "museum caption" voice of the app */
+  /* Headlines: Anybody Expanded Bold, as on drawingclubprague.com */
+  .font-display {
+    font-family: var(--font-display);
+    font-stretch: 125%;
+    font-variation-settings: 'wdth' 125;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  /* Small label voice: uppercase, tracked, muted */
   .eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--color-ink-soft);
-  }
-
-  .hairline {
-    border-color: var(--color-line);
-  }
-
-  /* Subtle paper grain, pure CSS */
-  .paper-grain {
-    background-image: radial-gradient(rgb(28 27 25 / 0.035) 1px, transparent 1px);
-    background-size: 3px 3px;
+    color: var(--color-muted);
   }
 
   .no-scrollbar {

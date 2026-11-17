@@ -197,8 +197,8 @@ export function AdminPage() {
           login(password);
         }}
       >
-        <h1 className="font-display text-[2.4rem] leading-none">Admin</h1>
-        <p className="text-ink-soft">Správa nástěnky Inspirace.</p>
+        <h1 className="font-display text-[1.8rem] leading-tight">Admin</h1>
+        <p className="text-muted">Správa nástěnky Inspirace.</p>
         <label className="flex flex-col gap-1.5 text-sm">
           Heslo
           <input
@@ -206,25 +206,25 @@ export function AdminPage() {
             autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-12 rounded-[4px] border border-line bg-paper-bright px-4 text-base outline-none focus:border-ink"
+            className="h-12 border border-line bg-surface px-4 text-base outline-none focus:border-fg"
           />
         </label>
-        <button type="submit" disabled={!password || !!busy} className="h-12 rounded-full bg-ink font-medium text-paper-bright disabled:opacity-40">
+        <button type="submit" disabled={!password || !!busy} className="h-12 bg-red font-medium text-white disabled:opacity-40">
           {busy || 'Přihlásit'}
         </button>
-        {message && <p className={message.error ? 'text-sm text-sanguine' : 'text-sm text-ink-soft'}>{message.text}</p>}
+        {message && <p className={message.error ? 'text-sm text-red-bright' : 'text-sm text-muted'}>{message.text}</p>}
       </form>
     );
   }
 
-  const tileBtn = 'grid size-9 place-items-center rounded-full bg-paper-bright/90 text-ink shadow-sm disabled:opacity-30';
+  const tileBtn = 'grid size-9 place-items-center bg-black/60 text-fg disabled:opacity-30';
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-32 pt-8 md:px-8">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="font-display text-[2.4rem] leading-none">Inspirace — admin</h1>
-          <p className="mt-2 text-sm text-ink-soft">
+          <h1 className="font-display text-[1.8rem] leading-tight">Inspirace — admin</h1>
+          <p className="mt-2 text-sm text-muted">
             {items.length} obrázků · přetáhni nebo použij šipky · změny pořadí a zdrojů ulož tlačítkem dole
           </p>
         </div>
@@ -234,26 +234,26 @@ export function AdminPage() {
             type="button"
             disabled={!!busy || dirty}
             onClick={() => fileInput.current?.click()}
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-ink px-5 text-sm font-medium text-paper-bright disabled:opacity-40"
+            className="inline-flex h-11 items-center gap-2 bg-red px-5 text-sm font-medium text-white disabled:opacity-40"
             title={dirty ? 'Nejdřív ulož změny' : undefined}
           >
             <ImagePlus size={18} aria-hidden /> Přidat obrázky
           </button>
-          <button type="button" onClick={logout} aria-label="Odhlásit" className="grid size-11 place-items-center rounded-full border border-line text-ink-soft hover:text-ink">
+          <button type="button" onClick={logout} aria-label="Odhlásit" className="grid size-11 place-items-center border border-line text-muted hover:text-fg">
             <LogOut size={17} aria-hidden />
           </button>
         </div>
       </div>
 
       {(busy || message) && (
-        <p role="status" className={`mt-5 rounded-[4px] px-4 py-3 text-sm ${message?.error ? 'bg-sanguine-soft text-sanguine' : 'bg-paper-deep text-ink'}`}>
+        <p role="status" className={`mt-5 px-4 py-3 text-sm ${message?.error ? 'bg-red/15 text-red-bright' : 'bg-surface-2 text-fg'}`}>
           {busy || message?.text}
         </p>
       )}
-      {dirty && !busy && <p className="mt-3 text-sm text-sanguine">Máš neuložené změny. Před přidáváním obrázků je ulož.</p>}
+      {dirty && !busy && <p className="mt-3 text-sm text-red-bright">Máš neuložené změny. Před přidáváním obrázků je ulož.</p>}
 
       {items.length === 0 ? (
-        <p className="mt-10 rounded-[4px] border border-dashed border-line px-6 py-16 text-center text-ink-soft">
+        <p className="mt-10 border border-dashed border-line px-6 py-16 text-center text-muted">
           Zatím žádné obrázky. Klikni na „Přidat obrázky“ — můžeš vybrat víc najednou.
         </p>
       ) : (
@@ -270,7 +270,7 @@ export function AdminPage() {
               }}
               className="group flex flex-col gap-2"
             >
-              <div className="relative aspect-[4/5] cursor-grab overflow-hidden rounded-[3px] bg-paper-deep active:cursor-grabbing">
+              <div className="relative aspect-[4/5] cursor-grab overflow-hidden bg-surface-2 active:cursor-grabbing">
                 <img
                   src={previews[it.id] ?? it.file}
                   alt=""
@@ -278,7 +278,7 @@ export function AdminPage() {
                   className="h-full w-full object-cover"
                   onError={(e) => ((e.currentTarget.style.visibility = 'hidden'))}
                 />
-                <span className="absolute left-2 top-2 rounded-full bg-ink/70 px-2 py-0.5 font-mono text-[0.65rem] text-paper-bright">{i + 1}</span>
+                <span className="absolute left-2 top-2 bg-black/70 px-2 py-0.5 text-[0.65rem] text-white">{i + 1}</span>
                 <div className="absolute inset-x-2 bottom-2 flex justify-between">
                   <div className="flex gap-1">
                     <button type="button" className={tileBtn} onClick={() => move(i, i - 1)} disabled={i === 0} aria-label="Posunout dopředu">
@@ -296,7 +296,7 @@ export function AdminPage() {
                     onClick={() => remove(it.id)}
                     disabled={!!busy}
                     aria-label="Smazat"
-                    className={`${tileBtn} ${confirmDelete === it.id ? 'w-auto! bg-sanguine! px-3 text-[0.72rem] font-medium text-paper-bright!' : ''}`}
+                    className={`${tileBtn} ${confirmDelete === it.id ? 'w-auto! bg-red! px-3 text-[0.72rem] font-medium text-white!' : ''}`}
                   >
                     {confirmDelete === it.id ? 'Smazat?' : <Trash2 size={15} aria-hidden />}
                   </button>
@@ -307,7 +307,7 @@ export function AdminPage() {
                 value={it.source ?? ''}
                 onChange={(e) => setSource(it.id, e.target.value)}
                 placeholder="Zdroj / autor (nepovinné)"
-                className="h-9 rounded-[3px] border border-line bg-paper-bright px-2.5 text-[0.8rem] outline-none focus:border-ink"
+                className="h-9 border border-line bg-surface px-2.5 text-[0.8rem] outline-none focus:border-fg"
               />
             </li>
           ))}
@@ -316,7 +316,7 @@ export function AdminPage() {
 
       {dirty && (
         <div className="fixed inset-x-0 bottom-20 z-40 flex justify-center px-4 md:bottom-6">
-          <button type="button" onClick={save} disabled={!!busy} className="h-12 rounded-full bg-sanguine px-8 font-medium text-paper-bright shadow-lg disabled:opacity-50">
+          <button type="button" onClick={save} disabled={!!busy} className="h-12 bg-red px-8 font-medium text-white disabled:opacity-50">
             Uložit změny
           </button>
         </div>

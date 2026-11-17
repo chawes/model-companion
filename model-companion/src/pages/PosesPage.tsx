@@ -21,19 +21,19 @@ export function PosesPage() {
   const { category, results, setCategory, query } = usePoseFilter();
 
   const chip = (active: boolean) =>
-    `h-10 shrink-0 rounded-full border px-4 text-[0.88rem] transition-colors ${
-      active ? 'border-ink bg-ink text-paper-bright' : 'border-line text-ink-soft hover:border-ink/40 hover:text-ink'
+    `h-10 shrink-0 border px-4 text-[0.88rem] transition-colors ${
+      active ? 'border-fg bg-red text-white' : 'border-line text-muted hover:border-fg/40 hover:text-fg'
     }`;
 
   return (
     <>
       <header className="mx-auto max-w-6xl px-5 pb-6 pt-8 md:px-8 md:pb-10 md:pt-14">
         <p className="eyebrow">{t('posesEyebrow')}</p>
-        <h1 className="mt-3 font-display text-[2.8rem] leading-[0.98] tracking-tight md:text-[4.6rem]">{t('posesTitle')}</h1>
-        <p className="mt-4 max-w-xl text-ink-soft md:text-[1.05rem]">{t('posesIntro')}</p>
+        <h1 className="font-display mt-3 text-[2rem] leading-[1.05] md:text-[3.2rem]">{t('posesTitle')}</h1>
+        <p className="mt-4 max-w-xl text-muted">{t('posesIntro')}</p>
       </header>
 
-      <div className="sticky top-14 z-20 bg-paper/92 backdrop-blur-md md:top-16">
+      <div className="sticky top-14 z-20 border-b border-line bg-bg/95 backdrop-blur-md md:top-[4.5rem]">
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-5 py-3 md:px-8">
           <div role="group" aria-label="Filter" className="no-scrollbar -mx-5 flex flex-1 gap-2 overflow-x-auto px-5 md:mx-0 md:px-0">
             <button type="button" aria-pressed={!category} onClick={() => setCategory(null)} className={chip(!category)}>
