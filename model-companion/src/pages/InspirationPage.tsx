@@ -24,7 +24,7 @@ export function InspirationPage() {
           ))}
         </div>
       ) : items.length === 0 ? (
-        <p className="mx-2 border border-dashed border-line px-6 py-16 text-center text-muted md:mx-0">{t('inspirationEmpty')}</p>
+        <p className="mx-2 rounded-md border border-dashed border-line px-6 py-16 text-center text-muted md:mx-0">{t('inspirationEmpty')}</p>
       ) : (
         <ul className="columns-2 gap-2 md:columns-3 md:gap-3 lg:columns-4">
           {items.map((item, i) => (
@@ -32,7 +32,7 @@ export function InspirationPage() {
               <button
                 type="button"
                 onClick={() => setOpen(i)}
-                className="block w-full overflow-hidden bg-surface-2 outline outline-1 -outline-offset-1 outline-transparent transition-[outline-color] hover:outline-red-bright"
+                className="block w-full overflow-hidden rounded-md bg-surface-2 outline outline-1 -outline-offset-1 outline-transparent transition-[outline-color] hover:outline-red-bright"
                 aria-label={`${t('openImage')} ${i + 1}`}
               >
                 <img

@@ -61,7 +61,7 @@ export function GuidePage() {
           href={SITE.modelingUrl}
           target="_blank"
           rel="noreferrer"
-          className="group mt-10 flex items-center justify-between gap-6 bg-red p-6 text-white transition-colors hover:bg-red-bright md:p-8"
+          className="group mt-10 flex items-center justify-between gap-6 rounded-md bg-red p-6 text-white transition-colors hover:bg-red-bright md:p-8"
         >
           <span>
             <span className="eyebrow text-white/60">{t('officialEyebrow')}</span>

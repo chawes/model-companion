@@ -9,7 +9,7 @@ const LANGS: { id: Lang; label: string }[] = [
 export function LangSwitch() {
   const { lang, setLang } = useLang();
   return (
-    <div role="group" aria-label="Jazyk / Language" className="flex border border-line">
+    <div role="group" aria-label="Jazyk / Language" className="flex overflow-hidden rounded-[4px] border border-fg/30">
       {LANGS.map(({ id, label }) => (
         <button
           key={id}

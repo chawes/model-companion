@@ -24,7 +24,7 @@ export function PoseImage({ pose, priority = false, className = '' }: Props) {
         fetchPriority={priority ? 'high' : 'auto'}
         onLoad={() => setLoaded(true)}
         onError={() => setLoaded(true)}
-        className={`h-full w-full object-cover transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        className={`h-full w-full ${pose.credit.placeholder ? 'object-contain' : 'object-cover'} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
       />
     </div>
   );

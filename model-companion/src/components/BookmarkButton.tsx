@@ -20,7 +20,7 @@ export function BookmarkButton({ poseId, variant = 'icon', className = '' }: Pro
         onClick={() => toggleSaved(poseId)}
         aria-pressed={saved}
         className={[
-          'inline-flex h-12 items-center justify-center gap-2 px-6 text-[0.95rem] font-semibold transition-colors duration-300',
+          'inline-flex h-12 items-center justify-center gap-2 rounded-md px-6 text-[0.95rem] font-semibold transition-colors duration-300',
           saved ? 'border border-fg text-fg hover:border-red-bright' : 'bg-red text-white hover:bg-red-bright',
           className,
         ].join(' ')}
@@ -42,8 +42,8 @@ export function BookmarkButton({ poseId, variant = 'icon', className = '' }: Pro
       aria-pressed={saved}
       aria-label={saved ? t('unsaveAria') : t('saveAria')}
       className={[
-        'grid size-10 place-items-center transition-colors duration-300 active:scale-95',
-        saved ? 'bg-red text-white' : 'bg-black/55 text-white hover:bg-black/80',
+        'grid size-9 place-items-center rounded-[4px] transition-colors duration-300 active:scale-95',
+        saved ? 'bg-red-bright text-white' : 'bg-transparent text-black hover:bg-black/10',
         className,
       ].join(' ')}
     >

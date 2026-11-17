@@ -12,6 +12,7 @@
     },
     "category": "standing",
     "duration": "10",
+    "difficulty": 1,
     "tip": {
       "cs": "Váha na jedné noze, druhá povolená — boky a ramena se nakloní proti sobě. Ruku si můžeš opřít o bok.",
       "en": "Weight on one leg, the other relaxed — hips and shoulders tilt in opposite directions. Rest a hand on your hip."
@@ -35,6 +36,7 @@
     },
     "category": "standing",
     "duration": "3-5",
+    "difficulty": 2,
     "tip": {
       "cs": "Dlouhá svislá linie od pat po prsty. Drž ji krátce — zvednuté ruce rychle unaví.",
       "en": "A long vertical line from heels to fingertips. Keep it short — raised arms tire quickly."
@@ -58,6 +60,7 @@
     },
     "category": "standing",
     "duration": "10",
+    "difficulty": 1,
     "tip": {
       "cs": "Otoč tělo bokem a hlavu vrať zpátky do místnosti. Otáčej se hlavně v trupu, krk nech volný.",
       "en": "Turn the body away and bring the head back toward the room. Rotate mostly through the torso, keep the neck easy."
@@ -81,6 +84,7 @@
     },
     "category": "seated",
     "duration": "15-20",
+    "difficulty": 1,
     "tip": {
       "cs": "Předkloň se a opři předloktí o stehna — váhu nese stolička a nohy. Hlavu nech volně klesnout.",
       "en": "Lean forward and rest your forearms on your thighs — the stool and legs carry the weight. Let the head hang naturally."
@@ -104,6 +108,7 @@
     },
     "category": "floor",
     "duration": "10",
+    "difficulty": 1,
     "tip": {
       "cs": "Seď na zemi, opři se dozadu o dlaně a jedno koleno pokrč. Dlaně natoč mírně ven, ušetříš zápěstí.",
       "en": "Sit on the floor, lean back on your hands and bend one knee. Turn the hands slightly outward to spare the wrists."
@@ -127,6 +132,7 @@
     },
     "category": "floor",
     "duration": "15-20",
+    "difficulty": 1,
     "tip": {
       "cs": "Lehni si na bok a hlavu si podepři rukou. S polštářem pod loktem a boky vydržíš dlouho.",
       "en": "Lie on your side with your head resting on one hand. A cushion under the elbow and hip makes it last."
@@ -150,6 +156,7 @@
     },
     "category": "action",
     "duration": "1-2",
+    "difficulty": 3,
     "tip": {
       "cs": "Silná diagonála od zadní nohy po natažené prsty. Jen na minutu nebo dvě.",
       "en": "A strong diagonal from back foot to reaching hand. Only for a minute or two."
@@ -173,6 +180,7 @@
     },
     "category": "action",
     "duration": "1-2",
+    "difficulty": 2,
     "tip": {
       "cs": "Chodidla míří jinam než ramena. Nejdřív pevně postav nohy, pak otoč trup.",
       "en": "Feet face one way, shoulders another. Plant your feet first, then rotate the torso."
@@ -196,6 +204,7 @@
     },
     "category": "action",
     "duration": "1-2",
+    "difficulty": 2,
     "tip": {
       "cs": "Zastav okamžik těsně před hodem — paže vzadu, váha na zadní noze.",
       "en": "Freeze the moment just before a throw — arm drawn back, weight on the back leg."
@@ -219,6 +228,7 @@
     },
     "category": "action",
     "duration": "3-5",
+    "difficulty": 2,
     "tip": {
       "cs": "Předkloň se v kyčlích a opři dlaně o stehna. Kolena nech lehce pokrčená.",
       "en": "Hinge at the hips and rest your hands on your thighs. Keep the knees soft."
@@ -242,6 +252,7 @@
     },
     "category": "standing",
     "duration": "15-20",
+    "difficulty": 1,
     "tip": {
       "cs": "Tyč přidá druhý bod opory a čistou linii udržíš mnohem déle. Drž ji maximálně ve výši ramen.",
       "en": "A staff adds a second point of support, so you can hold the line much longer. Hold it at shoulder height or below."
@@ -265,6 +276,7 @@
     },
     "category": "standing",
     "duration": "15-20",
+    "difficulty": 1,
     "tip": {
       "cs": "Klidný přirozený stoj s váhou na jedné noze. Ruce založ volně, ne pevně.",
       "en": "A calm, natural stance with weight on one leg. Fold the arms loosely, not tightly."
@@ -288,6 +300,7 @@
     },
     "category": "action",
     "duration": "3-5",
+    "difficulty": 3,
     "tip": {
       "cs": "Otevři hrudník a zakloň hlavu s rukama za ní. Výrazné, ale náročné — vždy na podložce.",
       "en": "Open the chest and tip the head back, hands behind it. Expressive but demanding — always on a cushion."
@@ -311,6 +324,7 @@
     },
     "category": "action",
     "duration": "3-5",
+    "difficulty": 2,
     "tip": {
       "cs": "Jedna noha na stoličce, ruka jde vzhůru po tyči. Ověř si, že stolička stojí pevně.",
       "en": "One foot on a stool, one hand reaching up a staff. Check the stool is stable first."
@@ -334,6 +348,7 @@
     },
     "category": "seated",
     "duration": "10",
+    "difficulty": 2,
     "tip": {
       "cs": "Seď na stoličce, ramena otoč od kolen a jednu nohu zasuň dozadu. Hlava se otáčí s rameny.",
       "en": "Sit on a stool, turn the shoulders away from the knees and tuck one leg back. Turn the head with the shoulders."
@@ -357,6 +372,7 @@
     },
     "category": "floor",
     "duration": "10",
+    "difficulty": 1,
     "tip": {
       "cs": "Jedno koleno na zemi, předloktí opřené o druhé. Pod koleno si dej polštář.",
       "en": "One knee down, forearm resting on the other. Put a cushion under the kneeling knee."

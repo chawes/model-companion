@@ -7,6 +7,9 @@ export type PoseCategory = 'standing' | 'seated' | 'floor' | 'action';
 
 export type PoseDuration = '1-2' | '3-5' | '10' | '15-20';
 
+/** How hard a pose is to hold: 1 easy, 2 moderate, 3 demanding. */
+export type Difficulty = 1 | 2 | 3;
+
 export interface ImageCredit {
   /** Who made the image (photographer, illustrator, tool). */
   author: string;
@@ -27,6 +30,7 @@ export interface Pose {
   imageAlt: Localized;
   category: PoseCategory;
   duration: PoseDuration;
+  difficulty: Difficulty;
   /** One short, practical tip. */
   tip: Localized;
   credit: ImageCredit;

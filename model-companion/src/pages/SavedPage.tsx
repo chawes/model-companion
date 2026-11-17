@@ -43,13 +43,13 @@ export function SavedPage() {
       {savedPoses.length > 0 ? (
         <PoseGallery poses={savedPoses} />
       ) : (
-        <div className="flex flex-col items-center border border-dashed border-line px-6 py-16 text-center">
+        <div className="flex flex-col items-center rounded-md border border-dashed border-line px-6 py-16 text-center">
           <div className="grid size-16 place-items-center bg-surface-2">
             <Bookmark size={26} strokeWidth={1.4} className="text-muted" aria-hidden />
           </div>
           <h2 className="font-display mt-5 text-[1.3rem] leading-tight">{t('savedEmptyTitle')}</h2>
           <p className="mt-2 max-w-sm text-muted">{t('savedEmptyText')}</p>
-          <Link to="/" className="mt-6 inline-flex h-12 items-center gap-2 bg-red px-6 text-[0.95rem] font-medium text-white hover:bg-red-bright">
+          <Link to="/" className="mt-6 inline-flex h-12 items-center gap-2 rounded-md bg-red px-6 text-[0.95rem] font-medium text-white hover:bg-red-bright">
             {t('savedBrowse')} <ArrowRight size={18} aria-hidden />
           </Link>
         </div>

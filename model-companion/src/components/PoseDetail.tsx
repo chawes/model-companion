@@ -1,10 +1,12 @@
-import { ArrowLeft, ArrowRight, Clock } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { durationText } from '../data/poses';
+import { categoryKey, durationText, plateNumber } from '../data/poses';
 import { useLang } from '../i18n/LangContext';
 import type { Pose } from '../types';
 import { BookmarkButton } from './BookmarkButton';
+import { DifficultyDots } from './DifficultyDots';
+import { tagClass } from './PoseCard';
 import { PoseImage } from './PoseImage';
 
 interface Props {
@@ -41,16 +43,31 @@ export function PoseDetail({ pose, prev, next, query }: Props) {
 
       <div className="grid gap-7 md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] md:items-start md:gap-12">
         <figure>
-          <PoseImage pose={pose} priority className="aspect-[4/5]" />
+          <PoseImage pose={pose} priority className="aspect-[4/5] rounded-md" />
           <figcaption className="mt-2 text-[0.72rem] text-faint">{credit}</figcaption>
         </figure>
 
         <div className="animate-enter md:sticky md:top-24">
-          <h1 className="font-display text-[1.9rem] leading-[1.08] md:text-[2.6rem]">{l(pose.title)}</h1>
-          <p className="mt-4 inline-flex items-center gap-2 text-[0.95rem] text-muted">
-            <Clock size={16} aria-hidden />
-            {t('suggested')}: <span className="text-fg">{durationText(pose.duration)} {t('minutes')}</span>
-          </p>
+          <p className="text-[0.85rem] text-faint">No. {plateNumber(pose)}</p>
+          <h1 className="font-display mt-1 text-[1.9rem] leading-[1.08] md:text-[2.6rem]">{l(pose.title)}</h1>
+          <dl className="mt-6 divide-y divide-line border-y border-line text-[0.95rem]">
+            <div className="flex items-center justify-between py-3">
+              <dt className="text-muted">{t('category')}</dt>
+              <dd className={tagClass}>{t(categoryKey(pose.category))}</dd>
+            </div>
+            <div className="flex items-center justify-between py-3">
+              <dt className="text-muted">{t('suggested')}</dt>
+              <dd>
+                {durationText(pose.duration)} {t('minutes')}
+              </dd>
+            </div>
+            <div className="flex items-center justify-between py-3">
+              <dt className="text-muted">{t('difficulty')}</dt>
+              <dd className="inline-flex items-center gap-2">
+                <DifficultyDots value={pose.difficulty} /> {t(`diff${pose.difficulty}` as 'diff1')}
+              </dd>
+            </div>
+          </dl>
           <p className="mt-6 border-l-2 border-red-bright pl-5 text-[1.12rem] leading-relaxed">{l(pose.tip)}</p>
           <BookmarkButton poseId={pose.id} variant="full" className="mt-8 w-full" />
           <p className="mt-3 text-center text-[0.78rem] text-faint">{t('suggestionNote')}</p>

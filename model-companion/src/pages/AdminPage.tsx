@@ -206,7 +206,7 @@ export function AdminPage() {
             autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-12 border border-line bg-surface px-4 text-base outline-none focus:border-fg"
+            className="h-12 rounded-md border border-line bg-surface px-4 text-base outline-none focus:border-fg"
           />
         </label>
         <button type="submit" disabled={!password || !!busy} className="h-12 bg-red font-medium text-white disabled:opacity-40">
@@ -234,7 +234,7 @@ export function AdminPage() {
             type="button"
             disabled={!!busy || dirty}
             onClick={() => fileInput.current?.click()}
-            className="inline-flex h-11 items-center gap-2 bg-red px-5 text-sm font-medium text-white disabled:opacity-40"
+            className="inline-flex h-11 items-center gap-2 rounded-md bg-red px-5 text-sm font-medium text-white disabled:opacity-40"
             title={dirty ? 'Nejdřív ulož změny' : undefined}
           >
             <ImagePlus size={18} aria-hidden /> Přidat obrázky
@@ -253,7 +253,7 @@ export function AdminPage() {
       {dirty && !busy && <p className="mt-3 text-sm text-red-bright">Máš neuložené změny. Před přidáváním obrázků je ulož.</p>}
 
       {items.length === 0 ? (
-        <p className="mt-10 border border-dashed border-line px-6 py-16 text-center text-muted">
+        <p className="mt-10 rounded-md border border-dashed border-line px-6 py-16 text-center text-muted">
           Zatím žádné obrázky. Klikni na „Přidat obrázky“ — můžeš vybrat víc najednou.
         </p>
       ) : (
@@ -316,7 +316,7 @@ export function AdminPage() {
 
       {dirty && (
         <div className="fixed inset-x-0 bottom-20 z-40 flex justify-center px-4 md:bottom-6">
-          <button type="button" onClick={save} disabled={!!busy} className="h-12 bg-red px-8 font-medium text-white disabled:opacity-50">
+          <button type="button" onClick={save} disabled={!!busy} className="h-12 rounded-md bg-red px-8 font-medium text-white disabled:opacity-50">
             Uložit změny
           </button>
         </div>

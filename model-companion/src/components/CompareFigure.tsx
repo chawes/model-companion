@@ -10,7 +10,7 @@ export function CompareFigure({ views }: { views: [GuideView, GuideView] }) {
 
   return (
     <figure>
-      <div className="relative aspect-[4/5] overflow-hidden bg-neutral">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-neutral">
         {views.map((v, i) => (
           <img
             key={v.image}
@@ -23,7 +23,7 @@ export function CompareFigure({ views }: { views: [GuideView, GuideView] }) {
           />
         ))}
       </div>
-      <div role="tablist" className="mt-3 grid grid-cols-2 border border-line">
+      <div role="tablist" className="mt-3 grid grid-cols-2 overflow-hidden rounded-md border border-line">
         {views.map((v, i) => (
           <button
             key={i}
