@@ -153,7 +153,18 @@ Design tokens (colours, fonts) are in `src/styles/index.css` under `@theme`.
 - **Multilingual:** all copy is in `src/data/*` — split per language (`en`, `cs`).
 - **Session timer:** a new page + route in `App.tsx`; pose durations are already typed.
 
-## 8. Inspiration board and /admin
+## 8. /admin — poses and Inspiration board
+
+`/admin` has two tabs:
+
+- **Pózy** — add, edit, delete and reorder poses (Czech + English texts, category, length,
+  difficulty, image, image credit / AI flag). Saved to `src/data/poses.json` + `public/poses/` by
+  `api/poses.js`. Empty English fields fall back to Czech in the app.
+- **Inspirace** — the image board below.
+
+Shared GitHub/auth code lives in `api/_github.js`.
+
+### Inspiration board
 
 The **Inspiration** section is a caption-free image board edited at `/admin`
 (upload, reorder, optional source/author, delete). Changes are committed to this

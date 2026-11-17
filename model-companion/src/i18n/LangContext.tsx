@@ -52,7 +52,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
       lang,
       setLang,
       t: (key) => fix(STRINGS[lang][key]),
-      l: (text) => fix(text[lang] || text.en),
+      l: (text) => fix(text[lang] || text.cs || text.en),
     };
   }, [lang, setLang]);
 
