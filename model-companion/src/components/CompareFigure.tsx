@@ -10,7 +10,7 @@ export function CompareFigure({ views }: { views: [GuideView, GuideView] }) {
 
   return (
     <figure>
-      <div className="relative aspect-[4/5] overflow-hidden rounded-[3px] bg-paper-deep ring-1 ring-ink/5">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-neutral">
         {views.map((v, i) => (
           <img
             key={v.image}
@@ -23,7 +23,7 @@ export function CompareFigure({ views }: { views: [GuideView, GuideView] }) {
           />
         ))}
       </div>
-      <div role="tablist" className="mt-3 grid grid-cols-2 gap-1 rounded-full bg-paper-deep p-1">
+      <div role="tablist" className="mt-3 grid grid-cols-2 overflow-hidden rounded-md border border-line">
         {views.map((v, i) => (
           <button
             key={i}
@@ -33,15 +33,15 @@ export function CompareFigure({ views }: { views: [GuideView, GuideView] }) {
             aria-selected={i === active}
             aria-controls={`${id}-panel`}
             onClick={() => setActive(i as 0 | 1)}
-            className={`h-10 rounded-full text-[0.85rem] font-medium transition-all duration-300 ${
-              i === active ? 'bg-ink text-paper-bright' : 'text-ink-soft hover:text-ink'
+            className={`h-10 text-[0.85rem] font-medium transition-colors duration-300 ${
+              i === active ? 'bg-fg text-bg' : 'text-muted hover:text-fg'
             }`}
           >
             {l(v.label)}
           </button>
         ))}
       </div>
-      <figcaption id={`${id}-panel`} role="tabpanel" aria-labelledby={`${id}-tab-${active}`} aria-live="polite" className="mt-2 px-1 text-[0.85rem] text-ink-soft">
+      <figcaption id={`${id}-panel`} role="tabpanel" aria-labelledby={`${id}-tab-${active}`} aria-live="polite" className="mt-2 px-1 text-[0.85rem] text-muted">
         {l(views[active].caption)}
       </figcaption>
     </figure>

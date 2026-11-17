@@ -30,11 +30,11 @@ export function SavedPage() {
     <div className="mx-auto max-w-6xl px-5 md:px-8">
       <header className="flex flex-col gap-4 pb-8 pt-8 md:flex-row md:items-end md:justify-between md:pb-10 md:pt-14">
         <div>
-          <h1 className="font-display text-[2.8rem] leading-[0.98] tracking-tight md:text-[4.2rem]">{t('savedTitle')}</h1>
-          <p className="mt-3 text-ink-soft">{t('savedIntro')}</p>
+          <h1 className="font-display text-[2rem] leading-[1.05] md:text-[3.2rem]">{t('savedTitle')}</h1>
+          <p className="mt-3 text-muted">{t('savedIntro')}</p>
         </div>
         {savedPoses.length > 0 && (
-          <button type="button" onClick={onClear} className={`self-start text-sm underline-offset-4 hover:underline ${confirming ? 'text-sanguine' : 'text-ink-soft'}`}>
+          <button type="button" onClick={onClear} className={`self-start text-sm underline-offset-4 hover:underline ${confirming ? 'text-red-bright' : 'text-muted'}`}>
             {confirming ? t('savedClearConfirm') : t('savedClear')}
           </button>
         )}
@@ -43,13 +43,13 @@ export function SavedPage() {
       {savedPoses.length > 0 ? (
         <PoseGallery poses={savedPoses} />
       ) : (
-        <div className="flex flex-col items-center rounded-[4px] border border-dashed border-line px-6 py-16 text-center">
-          <div className="grid size-16 place-items-center rounded-full bg-paper-deep">
-            <Bookmark size={26} strokeWidth={1.4} className="text-ink-soft" aria-hidden />
+        <div className="flex flex-col items-center rounded-md border border-dashed border-line px-6 py-16 text-center">
+          <div className="grid size-16 place-items-center bg-surface-2">
+            <Bookmark size={26} strokeWidth={1.4} className="text-muted" aria-hidden />
           </div>
-          <h2 className="mt-5 font-display text-[1.8rem] leading-tight">{t('savedEmptyTitle')}</h2>
-          <p className="mt-2 max-w-sm text-ink-soft">{t('savedEmptyText')}</p>
-          <Link to="/" className="mt-6 inline-flex h-12 items-center gap-2 rounded-full bg-ink px-6 text-[0.95rem] font-medium text-paper-bright hover:bg-ink/85">
+          <h2 className="font-display mt-5 text-[1.3rem] leading-tight">{t('savedEmptyTitle')}</h2>
+          <p className="mt-2 max-w-sm text-muted">{t('savedEmptyText')}</p>
+          <Link to="/" className="mt-6 inline-flex h-12 items-center gap-2 rounded-md bg-red px-6 text-[0.95rem] font-medium text-white hover:bg-red-bright">
             {t('savedBrowse')} <ArrowRight size={18} aria-hidden />
           </Link>
         </div>

@@ -43,7 +43,7 @@ export function Lightbox({ items, index, onIndex, onClose }: Props) {
 
   if (!item) return null;
 
-  const btn = 'grid size-12 place-items-center rounded-full bg-paper-bright/10 text-paper-bright transition-colors hover:bg-paper-bright/20';
+  const btn = 'grid size-12 place-items-center bg-black/60 text-white transition-colors hover:bg-black/60';
 
   // portal to <body> so the overlay sits above the sticky header (main is its own stacking context)
   return createPortal(
@@ -51,7 +51,7 @@ export function Lightbox({ items, index, onIndex, onClose }: Props) {
       role="dialog"
       aria-modal="true"
       aria-label={t('navInspiration')}
-      className="fixed inset-0 z-50 flex flex-col bg-ink animate-fade"
+      className="fixed inset-0 z-50 flex flex-col bg-black animate-fade"
       onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
       onTouchEnd={(e) => {
         if (touchX.current === null) return;
@@ -61,7 +61,7 @@ export function Lightbox({ items, index, onIndex, onClose }: Props) {
       }}
     >
       <div className="flex items-center justify-between px-4 pt-[max(1rem,env(safe-area-inset-top))]">
-        <span className="font-mono text-[0.75rem] tracking-wider text-paper-bright/60">
+        <span className="text-[0.75rem] tracking-wider text-white/60">
           {index + 1} / {items.length}
         </span>
         <button ref={closeRef} type="button" onClick={onClose} aria-label={t('close')} className={btn}>
@@ -74,7 +74,7 @@ export function Lightbox({ items, index, onIndex, onClose }: Props) {
           key={item.id}
           src={item.file}
           alt=""
-          className="max-h-full max-w-full animate-fade rounded-[2px] object-contain"
+          className="max-h-full max-w-full animate-fade object-contain"
           onClick={(e) => e.stopPropagation()}
         />
         {items.length > 1 && (
@@ -89,7 +89,7 @@ export function Lightbox({ items, index, onIndex, onClose }: Props) {
         )}
       </div>
 
-      <div className="min-h-12 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] text-center text-[0.8rem] text-paper-bright/60">
+      <div className="min-h-12 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] text-center text-[0.8rem] text-white/60">
         {item.source ? `${t('source')}: ${item.source}` : ''}
       </div>
     </div>,

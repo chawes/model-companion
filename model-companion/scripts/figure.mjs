@@ -14,14 +14,14 @@ const W = 400;
 const H = 500;
 
 export const PALETTE = {
-  paper: '#F3EEE4',
-  paperDeep: '#E7E0D2',
-  ink: '#1D1C1A',
-  inkSoft: '#6E6A62',
-  limbNear: '#FBF8F2',
-  limbFar: '#DCD4C5',
-  sanguine: '#B5532F',
-  tape: '#C9A227',
+  paper: '#F4F4F4',
+  paperDeep: '#E2E2E2',
+  ink: '#111111',
+  inkSoft: '#6E6E6E',
+  limbNear: '#FFFFFF',
+  limbFar: '#D4D4D4',
+  sanguine: '#C31831',
+  tape: '#E43737',
 };
 
 // Segment lengths (≈ 8-head figure, head ≈ 52px)
